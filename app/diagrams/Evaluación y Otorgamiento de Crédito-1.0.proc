@@ -3,7 +3,7 @@
   <process:MainProcess xmi:id="_kh918EaHEfC045Lmt-mAAA" name="Evaluación y Otorgamiento de Crédito" bonitaModelVersion="8">
     <elements xmi:type="process:Pool" xmi:id="_kh-dAEaHEfC045Lmt-mAAA" name="Pool">
       <elements xmi:type="process:Lane" xmi:id="_kh-dAUaHEfC045Lmt-mAAA" name="Solicitante" actor="_kh-dGkaHEfC045Lmt-mAAA">
-        <elements xmi:type="process:StartEvent" xmi:id="_kh-dAkaHEfC045Lmt-mAAA" name="Inicio1" outgoing="_kh-dF0aHEfC045Lmt-mAAA">
+        <elements xmi:type="process:StartEvent" xmi:id="_kh-dAkaHEfC045Lmt-mAAA" name="Inicio" outgoing="_kh-dF0aHEfC045Lmt-mAAA">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_kh-dA0aHEfC045Lmt-mAAA" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_kh-dBEaHEfC045Lmt-mAAA" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_kh-dBUaHEfC045Lmt-mAAA" name="" content="" returnTypeFixed="true"/>
@@ -70,7 +70,7 @@
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_VVJmIUaKEfC045Lmt-mAAA" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_VVJmI0aKEfC045Lmt-mAAA" name="" content="" returnTypeFixed="true"/>
         </elements>
-        <elements xmi:type="process:ServiceTask" xmi:id="_T51FYEaPEfC045Lmt-mAAA" name="Generacion de contrato" outgoing="_dtmFg0aPEfC045Lmt-mAAA" incoming="_T52TgUaPEfC045Lmt-mAAA">
+        <elements xmi:type="process:ServiceTask" xmi:id="_T51FYEaPEfC045Lmt-mAAA" name="Generar contrato" outgoing="_dtmFg0aPEfC045Lmt-mAAA" incoming="_T52TgUaPEfC045Lmt-mAAA">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_T51scUaPEfC045Lmt-mAAA" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_T51scEaPEfC045Lmt-mAAA" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_T51sckaPEfC045Lmt-mAAA" name="" content="" returnTypeFixed="true"/>

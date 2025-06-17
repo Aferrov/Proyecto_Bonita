@@ -82,7 +82,7 @@
         </elements>
       </elements>
       <elements xmi:type="process:Lane" xmi:id="_8nX6QEaIEfC045Lmt-mAAA" name="Analista Financiero">
-        <elements xmi:type="process:ServiceTask" xmi:id="_Jlt4oEaMEfC045Lmt-mAAA" name="Revision de Solicitud" outgoing="_uSKEAEaPEfC045Lmt-mAAA" incoming="_JlvGwEaMEfC045Lmt-mAAA">
+        <elements xmi:type="process:ServiceTask" xmi:id="_Jlt4oEaMEfC045Lmt-mAAA" name="Revisar  Solicitud" outgoing="_uSKEAEaPEfC045Lmt-mAAA" incoming="_JlvGwEaMEfC045Lmt-mAAA">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_Jlt4okaMEfC045Lmt-mAAA" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_Jlt4oUaMEfC045Lmt-mAAA" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_Jlt4o0aMEfC045Lmt-mAAA" name="" content="" returnTypeFixed="true"/>
@@ -102,7 +102,7 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_kSBjM0aMEfC045Lmt-mAAA" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_kSBjMkaMEfC045Lmt-mAAA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
         </elements>
-        <elements xmi:type="process:ServiceTask" xmi:id="_uSI14EaPEfC045Lmt-mAAA" name="Evaluacion de Capacidad de pago" outgoing="_F-unB0aQEfC045Lmt-mAAA" incoming="_uSKEAEaPEfC045Lmt-mAAA">
+        <elements xmi:type="process:ServiceTask" xmi:id="_uSI14EaPEfC045Lmt-mAAA" name="Evaluar Capacidad de pago" outgoing="_F-unB0aQEfC045Lmt-mAAA" incoming="_uSKEAEaPEfC045Lmt-mAAA">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_uSJc8UaPEfC045Lmt-mAAA" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_uSJc8EaPEfC045Lmt-mAAA" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_uSJc8kaPEfC045Lmt-mAAA" name="" content="" returnTypeFixed="true"/>

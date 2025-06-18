@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:decision="http://www.bonitasoft.org/ns/bpm/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/bpm/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/bpm/process">
   <process:MainProcess xmi:id="_kh918EaHEfC045Lmt-mAAA" name="Evaluación y Otorgamiento de Crédito" bonitaModelVersion="8">
-    <elements xmi:type="process:Pool" xmi:id="_kh-dAEaHEfC045Lmt-mAAA" name="Pool">
+    <elements xmi:type="process:Pool" xmi:id="_kh-dAEaHEfC045Lmt-mAAA" name="Evaluacion y Otorgamiento de Credito">
       <elements xmi:type="process:Lane" xmi:id="_kh-dAUaHEfC045Lmt-mAAA" name="Solicitante" actor="_kh-dGkaHEfC045Lmt-mAAA">
         <elements xmi:type="process:StartEvent" xmi:id="_kh-dAkaHEfC045Lmt-mAAA" name="Inicio" outgoing="_kh-dF0aHEfC045Lmt-mAAA">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_kh-dA0aHEfC045Lmt-mAAA" name="" content="" returnTypeFixed="true"/>
@@ -55,7 +55,7 @@
         </elements>
       </elements>
       <elements xmi:type="process:Lane" xmi:id="_ytwJwEaIEfC045Lmt-mAAA" name="Sistema">
-        <elements xmi:type="process:ServiceTask" xmi:id="_AK4dQEaJEfC045Lmt-mAAA" name="Revision de Historial Crediticio." outgoing="_VVK0QEaKEfC045Lmt-mAAA" incoming="_ALC1UEaJEfC045Lmt-mAAA">
+        <elements xmi:type="process:ServiceTask" xmi:id="_AK4dQEaJEfC045Lmt-mAAA" name="Revisar el Historial Crediticio." outgoing="_VVK0QEaKEfC045Lmt-mAAA" incoming="_ALC1UEaJEfC045Lmt-mAAA">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_AK5EUUaJEfC045Lmt-mAAA" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_AK5EUEaJEfC045Lmt-mAAA" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_AK5rYEaJEfC045Lmt-mAAA" name="" content="" returnTypeFixed="true"/>
@@ -82,7 +82,11 @@
         </elements>
       </elements>
       <elements xmi:type="process:Lane" xmi:id="_8nX6QEaIEfC045Lmt-mAAA" name="Analista Financiero">
+<<<<<<< HEAD
         <elements xmi:type="process:ServiceTask" xmi:id="_Jlt4oEaMEfC045Lmt-mAAA" name="Revisar  Solicitud" outgoing="_uSKEAEaPEfC045Lmt-mAAA" incoming="_JlvGwEaMEfC045Lmt-mAAA">
+=======
+        <elements xmi:type="process:ServiceTask" xmi:id="_Jlt4oEaMEfC045Lmt-mAAA" name="Revisar Solicitud" outgoing="_uSKEAEaPEfC045Lmt-mAAA" incoming="_JlvGwEaMEfC045Lmt-mAAA">
+>>>>>>> branch 'master' of https://github.com/Aferrov/Proyecto_Bonita.git
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_Jlt4okaMEfC045Lmt-mAAA" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_Jlt4oUaMEfC045Lmt-mAAA" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_Jlt4o0aMEfC045Lmt-mAAA" name="" content="" returnTypeFixed="true"/>
@@ -92,7 +96,7 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_Jlt4qEaMEfC045Lmt-mAAA" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_Jlt4p0aMEfC045Lmt-mAAA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
         </elements>
-        <elements xmi:type="process:ServiceTask" xmi:id="_kSA8IEaMEfC045Lmt-mAAA" name="Aprobacion de monto y condiciones" outgoing="_T52TgUaPEfC045Lmt-mAAA" incoming="_S9VygEaQEfC045Lmt-mAAA">
+        <elements xmi:type="process:ServiceTask" xmi:id="_kSA8IEaMEfC045Lmt-mAAA" name="Aprobar el monto y condiciones" outgoing="_T52TgUaPEfC045Lmt-mAAA" incoming="_S9VygEaQEfC045Lmt-mAAA">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_kSA8IkaMEfC045Lmt-mAAA" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_kSA8IUaMEfC045Lmt-mAAA" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_kSA8I0aMEfC045Lmt-mAAA" name="" content="" returnTypeFixed="true"/>
@@ -102,7 +106,11 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_kSBjM0aMEfC045Lmt-mAAA" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_kSBjMkaMEfC045Lmt-mAAA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
         </elements>
+<<<<<<< HEAD
         <elements xmi:type="process:ServiceTask" xmi:id="_uSI14EaPEfC045Lmt-mAAA" name="Evaluar Capacidad de pago" outgoing="_F-unB0aQEfC045Lmt-mAAA" incoming="_uSKEAEaPEfC045Lmt-mAAA">
+=======
+        <elements xmi:type="process:ServiceTask" xmi:id="_uSI14EaPEfC045Lmt-mAAA" name="Evaluar la Capacidad de pago" outgoing="_F-unB0aQEfC045Lmt-mAAA" incoming="_uSKEAEaPEfC045Lmt-mAAA">
+>>>>>>> branch 'master' of https://github.com/Aferrov/Proyecto_Bonita.git
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_uSJc8UaPEfC045Lmt-mAAA" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_uSJc8EaPEfC045Lmt-mAAA" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_uSJc8kaPEfC045Lmt-mAAA" name="" content="" returnTypeFixed="true"/>

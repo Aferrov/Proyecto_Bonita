@@ -5,10 +5,12 @@
             <fields>
                 <field type="LONG" length="255" name="contratoId" nullable="false" collection="false"/>
                 <field type="STRING" length="255" name="tipoContrato" nullable="false" collection="false"/>
-                <field type="STRING" length="255" name="partesInvolucradas" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="solicitante" nullable="false" collection="false"/>
                 <field type="OFFSETDATETIME" length="255" name="fechaContrato" nullable="false" collection="false"/>
                 <field type="DOUBLE" length="255" name="monto" nullable="false" collection="false"/>
-                <field type="STRING" length="255" name="archivoAdjunto" nullable="false" collection="false"/>
+                <field type="BOOLEAN" length="255" name="esValidoLegalmente" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="cumpleSBS" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="tieneFirma" nullable="true" collection="false"/>
                 <field type="BOOLEAN" length="255" name="estaAprobado" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>

@@ -1,10 +1,10 @@
 {
-  "id" : "newForm2",
-  "name" : "newForm2",
+  "id" : "mostrarContrato",
+  "name" : "mostrarContrato",
   "type" : "form",
-  "uuid" : "e4b41547-d41d-4148-a0bd-a2e9020a8c9e",
+  "uuid" : "64202dcf-cbf4-4d79-b213-d32ccb166c69",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1750602961620,
+  "lastUpdate" : 1750993469614,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -13,8 +13,20 @@
         "dimension" : {
           "xs" : 12
         },
-        "propertyValues" : { },
-        "reference" : "81e003f9-69e5-4eb1-bfd1-66ab72cd1091",
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "repeatedCollection" : {
+            "type" : "variable"
+          }
+        },
+        "reference" : "348ecc02-f46c-48c2-9668-046c194dc6b7",
         "hasValidationError" : false,
         "id" : "pbContainer",
         "rows" : [
@@ -42,7 +54,7 @@
                 },
                 "text" : {
                   "type" : "interpolation",
-                  "value" : "{{ task.displayName }}"
+                  "value" : "Contrato"
                 },
                 "alignment" : {
                   "type" : "constant",
@@ -51,9 +63,13 @@
                 "dimension" : {
                   "type" : "constant",
                   "value" : 12
+                },
+                "allowHTML" : {
+                  "type" : "constant",
+                  "value" : false
                 }
               },
-              "reference" : "4d6e72c2-45db-4b19-85af-6cd7e717f158",
+              "reference" : "eb266274-5a93-412a-9178-a555986f14ad",
               "hasValidationError" : false,
               "id" : "pbTitle",
               "description" : ""
@@ -63,48 +79,52 @@
             {
               "type" : "component",
               "dimension" : {
-                "md" : 12,
-                "sm" : 12,
                 "xs" : 12,
+                "sm" : 12,
+                "md" : 12,
                 "lg" : 12
               },
               "propertyValues" : {
-                "allowHtml" : {
+                "cssClasses" : {
                   "type" : "constant",
-                  "value" : true
-                },
-                "labelHidden" : {
-                  "type" : "constant",
-                  "value" : true
+                  "value" : ""
                 },
                 "hidden" : {
                   "type" : "constant",
                   "value" : false
                 },
-                "cssClasses" : {
+                "allowHTML" : {
                   "type" : "constant",
-                  "value" : ""
+                  "value" : false
+                },
+                "labelHidden" : {
+                  "type" : "constant",
+                  "value" : true
                 },
                 "label" : {
-                  "type" : "interpolation"
+                  "type" : "interpolation",
+                  "value" : "Default label"
+                },
+                "labelPosition" : {
+                  "type" : "constant",
+                  "value" : "top"
+                },
+                "labelWidth" : {
+                  "type" : "constant",
+                  "value" : 4
                 },
                 "text" : {
                   "type" : "interpolation",
-                  "value" : "{{ task.displayDescription }}"
+                  "value" : "{{contrato.contratoId}}"
                 },
                 "alignment" : {
                   "type" : "constant",
                   "value" : "left"
-                },
-                "dimension" : {
-                  "type" : "constant",
-                  "value" : 12
                 }
               },
-              "reference" : "4f003ae0-ef35-4a79-90f3-0fa9af1127fd",
+              "reference" : "719db620-528f-4a18-a2fc-c057da5c1151",
               "hasValidationError" : false,
-              "id" : "pbText",
-              "description" : ""
+              "id" : "pbText"
             }
           ]
         ]
@@ -117,7 +137,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "35c99a12-05f5-4cde-be13-63a15b1b490e",
+        "reference" : "eafa8476-1ef5-4382-b017-0d03cf011eba",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -126,10 +146,50 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "0b19dfb0-e639-4e3a-9b09-f0ace8b2fd46",
+          "reference" : "75c451b7-08d1-45d1-a919-713fa55310a5",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
+            [
+              {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "type" : {
+                    "type" : "constant",
+                    "value" : "URL"
+                  },
+                  "url" : {
+                    "type" : "constant",
+                    "value" : "../API/bpm/documentDownload?docId={{contrato.contratoId}}"
+                  },
+                  "document" : {
+                    "type" : "variable",
+                    "value" : "../API/bpm/documentDownload?docId={{contrato.contratoid}}"
+                  },
+                  "showPreview" : {
+                    "type" : "constant",
+                    "value" : true
+                  }
+                },
+                "reference" : "155bd580-87e1-4a3e-8194-f3918f86ac0c",
+                "hasValidationError" : false,
+                "id" : "pbFileViewer"
+              }
+            ],
             [
               {
                 "type" : "component",
@@ -205,7 +265,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "bb2e6575-fe46-4619-b7a1-ca735953875a",
+                "reference" : "2ea47633-fc93-41d8-bb50-6fe86f50b513",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
@@ -257,7 +317,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "9128fef3-ed0e-448e-8ff8-cd67142f933d",
+                "reference" : "d1b7ae16-4457-444a-8a54-10e1a0cfec4a",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
@@ -313,18 +373,25 @@
         "id"
       ],
       "exposed" : false
+    },
+    "contrato" : {
+      "type" : "url",
+      "value" : [
+        "../{{context.contrato_ref.link}}"
+      ],
+      "exposed" : false
     }
   },
   "assets" : [
     {
-      "id" : "828adcfe-2b9e-46bc-bc98-caf5daf804ea",
+      "id" : "7cf813fc-07c7-41a2-b9ce-e880876d209c",
       "name" : "localization.json",
       "type" : "json",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "8fbaef6e-7c88-4933-8c25-b848f026416f",
+      "id" : "cdb81cca-c35b-4aca-a26e-f926c3c08166",
       "name" : "style.css",
       "type" : "css",
       "order" : 0,

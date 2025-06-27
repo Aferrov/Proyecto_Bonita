@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "dd261094-8f17-442a-94da-038764e792fd",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1750245441852,
+  "lastUpdate" : 1750905843722,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -356,7 +356,7 @@
                         },
                         "text" : {
                           "type" : "interpolation",
-                          "value" : "{{contrato.fechaContrato|uiDate}}"
+                          "value" : "{{contrato.fechaContrato}}"
                         },
                         "alignment" : {
                           "type" : "constant",
@@ -365,6 +365,18 @@
                         "dimension" : {
                           "type" : "constant",
                           "value" : 12
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
                         }
                       },
                       "reference" : "5ef22c70-973c-4a5d-ae6a-4e1d1233543f",

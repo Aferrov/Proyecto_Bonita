@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "5c1ea12a-e905-4b70-bd42-053d5ffabdeb",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1750245140235,
+  "lastUpdate" : 1750946667492,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -393,7 +393,7 @@
                         },
                         "text" : {
                           "type" : "interpolation",
-                          "value" : "{{contrato.fechaContrato|uiDate}}"
+                          "value" : "{{contrato.fechaContrato}}"
                         },
                         "alignment" : {
                           "type" : "constant",
@@ -402,6 +402,18 @@
                         "dimension" : {
                           "type" : "constant",
                           "value" : 12
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
                         }
                       },
                       "reference" : "23be54fe-14a8-42f5-97a9-b0c2daaf8fab",
@@ -469,7 +481,7 @@
                   "xs" : 12,
                   "sm" : 12,
                   "md" : 12,
-                  "lg" : 12
+                  "lg" : 6
                 },
                 "propertyValues" : {
                   "cssClasses" : {
@@ -516,7 +528,7 @@
                   },
                   "dataToSend" : {
                     "type" : "constant",
-                    "value" : "{\"contratoInput\":{\"tieneFirma\":true}"
+                    "value" : "{\"contratoInput\":{\"tieneFirma\":true}}"
                   },
                   "dataFromSuccess" : {
                     "type" : "variable"

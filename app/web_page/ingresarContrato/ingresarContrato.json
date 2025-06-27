@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "584aafc7-ecef-4005-9f37-ac6702151d2a",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1750243807851,
+  "lastUpdate" : 1750907373740,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -299,7 +299,7 @@
                         },
                         "dateFormat" : {
                           "type" : "constant",
-                          "value" : "MM/dd/yyyy"
+                          "value" : "dd/MM/yyyy"
                         },
                         "placeholder" : {
                           "type" : "interpolation",
@@ -358,7 +358,8 @@
                           "value" : "Monto"
                         },
                         "placeholder" : {
-                          "type" : "constant"
+                          "type" : "constant",
+                          "value" : ""
                         },
                         "type" : {
                           "type" : "constant",
@@ -393,7 +394,8 @@
                           "value" : 0
                         },
                         "min" : {
-                          "type" : "constant"
+                          "type" : "constant",
+                          "value" : 10
                         },
                         "max" : {
                           "type" : "constant"

@@ -80,7 +80,7 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_Qcg5h0ZZEfCF3YkdAsmwbQ" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_Qcg5hkZZEfCF3YkdAsmwbQ" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_F5tC2UleEfCqn9DzcQHfCg">
-            <targetForm xmi:type="expression:Expression" xmi:id="_bUYAsE9pEfCL0NdktLx62A" name="newForm1" content="65ef1da4-5c18-4637-8823-af7fc114eb34" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_bUYAsE9pEfCL0NdktLx62A" name="llenarObservacion" content="872b49e6-834b-4a2c-9332-bfc848cae591" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_F5tC2EleEfCqn9DzcQHfCg">
             <inputs xmi:type="process:ContractInput" xmi:id="_e2Gs8E9nEfCL0NdktLx62A" name="inputObservacion" type="COMPLEX" dataReference="reclamo" createMode="false">
@@ -210,7 +210,7 @@
               <referencedElements xmi:type="process:Document" xmi:id="_vEISYE91EfCL0NdktLx62A" name="documentoReclamo"/>
             </leftOperand>
             <rightOperand xmi:type="expression:Expression" xmi:id="_SCZBgk91EfCL0NdktLx62A" name="newScript()" content="import org.bonitasoft.engine.bpm.document.DocumentValue&#xD;&#xA;import java.nio.charset.StandardCharsets&#xD;&#xA;&#xD;&#xA;def contenido = &quot;&quot;&quot;\&#xD;&#xA;RECLAMO VALIDADO&#xD;&#xA;&#xD;&#xA;Tipo de Reclamo: ${reclamo.tipoReclamo}&#xD;&#xA;Observación: ${reclamo.observacion}&#xD;&#xA;Fecha: ${new Date()}&#x9;&#xD;&#xA;&quot;&quot;&quot;&#xD;&#xA;&#xD;&#xA;byte[] datos = contenido.getBytes(StandardCharsets.UTF_8)&#xD;&#xA;&#xD;&#xA;return new DocumentValue(datos, &quot;reclamo-validado.txt&quot;, &quot;text/plain&quot;)&#xD;&#xA;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="org.bonitasoft.engine.bpm.document.DocumentValue">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_KyXUAE92EfCL0NdktLx62A" name="reclamo" dataType="_VJBwU0ZSEfCLa7V-PDqTOw" className="com.company.model.ReclamoData"/>
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="__PbM4FMFEfCjLZZ53_Gldw" name="reclamo" dataType="_VJBwU0ZSEfCLa7V-PDqTOw" className="com.company.model.ReclamoData"/>
             </rightOperand>
             <operator xmi:type="expression:Operator" xmi:id="_SCZBg091EfCL0NdktLx62A" type="DOCUMENT_CREATE_UPDATE"/>
           </operations>
@@ -245,7 +245,7 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_yHr_ck90EfCL0NdktLx62A" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_yHr_cU90EfCL0NdktLx62A" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_5JGMuU90EfCL0NdktLx62A">
-            <targetForm xmi:type="expression:Expression" xmi:id="_0XbikE92EfCL0NdktLx62A" name="newForm3" content="c86ec88d-23f3-4a8c-923e-ef7d08be7ac3" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_0XbikE92EfCL0NdktLx62A" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_5JGMuE90EfCL0NdktLx62A"/>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_5JGMu090EfCL0NdktLx62A" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>

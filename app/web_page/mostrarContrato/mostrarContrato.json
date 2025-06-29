@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "64202dcf-cbf4-4d79-b213-d32ccb166c69",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1750993469614,
+  "lastUpdate" : 1751085831020,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -81,8 +81,8 @@
               "dimension" : {
                 "xs" : 12,
                 "sm" : 12,
-                "md" : 12,
-                "lg" : 12
+                "md" : 6,
+                "lg" : 6
               },
               "propertyValues" : {
                 "cssClasses" : {
@@ -115,14 +115,14 @@
                 },
                 "text" : {
                   "type" : "interpolation",
-                  "value" : "{{contrato.contratoId}}"
+                  "value" : "{{contratoTxt}}"
                 },
                 "alignment" : {
                   "type" : "constant",
                   "value" : "left"
                 }
               },
-              "reference" : "719db620-528f-4a18-a2fc-c057da5c1151",
+              "reference" : "78542a9c-d451-4017-8a21-29c4912f74ba",
               "hasValidationError" : false,
               "id" : "pbText"
             }
@@ -132,11 +132,72 @@
     ],
     [
       {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "allowHTML" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "labelHidden" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "label" : {
+            "type" : "interpolation",
+            "value" : "Default label"
+          },
+          "labelPosition" : {
+            "type" : "constant",
+            "value" : "top"
+          },
+          "labelWidth" : {
+            "type" : "constant",
+            "value" : 4
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "{{contratoContenido}}"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "left"
+          }
+        },
+        "reference" : "917a0438-6946-403b-b2fa-37f45c475056",
+        "hasValidationError" : false,
+        "id" : "pbText"
+      }
+    ],
+    [
+      {
         "type" : "formContainer",
         "dimension" : {
           "xs" : 12
         },
-        "propertyValues" : { },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          }
+        },
         "reference" : "eafa8476-1ef5-4382-b017-0d03cf011eba",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
@@ -168,36 +229,69 @@
                     "type" : "constant",
                     "value" : false
                   },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "text" : {
+                    "type" : "interpolation",
+                    "value" : "Link"
+                  },
                   "type" : {
                     "type" : "constant",
                     "value" : "URL"
                   },
-                  "url" : {
+                  "targetUrl" : {
                     "type" : "constant",
-                    "value" : "../API/bpm/documentDownload?docId={{contrato.contratoId}}"
+                    "value" : "/bonita/API/bpm/document/{{taskInput.contratoGenerado.documentId}}/content"
                   },
-                  "document" : {
-                    "type" : "variable",
-                    "value" : "../API/bpm/documentDownload?docId={{contrato.contratoid}}"
+                  "pageToken" : {
+                    "type" : "constant"
                   },
-                  "showPreview" : {
+                  "processName" : {
+                    "type" : "constant"
+                  },
+                  "processVersion" : {
+                    "type" : "constant"
+                  },
+                  "taskId" : {
+                    "type" : "constant"
+                  },
+                  "caseId" : {
+                    "type" : "constant"
+                  },
+                  "target" : {
                     "type" : "constant",
-                    "value" : true
+                    "value" : "_self"
+                  },
+                  "appToken" : {
+                    "type" : "constant"
+                  },
+                  "urlParams" : {
+                    "type" : "constant"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "left"
+                  },
+                  "buttonStyle" : {
+                    "type" : "constant",
+                    "value" : "link"
                   }
                 },
-                "reference" : "155bd580-87e1-4a3e-8194-f3918f86ac0c",
+                "reference" : "f70b51b4-d43c-4316-a981-1bf302dd1d00",
                 "hasValidationError" : false,
-                "id" : "pbFileViewer"
+                "id" : "pbLink"
               }
             ],
             [
               {
                 "type" : "component",
                 "dimension" : {
-                  "md" : 12,
+                  "md" : 6,
                   "sm" : 12,
                   "xs" : 12,
-                  "lg" : 12
+                  "lg" : 6
                 },
                 "propertyValues" : {
                   "removeItem" : {
@@ -217,11 +311,11 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Submit"
+                    "value" : "Enviar"
                   },
                   "dataToSend" : {
                     "type" : "expression",
-                    "value" : "formOutput"
+                    "value" : "{\"contratoInput\":{\"estaAprobado\":true}}"
                   },
                   "dataFromError" : {
                     "type" : "variable",
@@ -263,6 +357,27 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "assign" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "url" : {
+                    "type" : "interpolation"
+                  },
+                  "responseStatusCode" : {
+                    "type" : "variable"
+                  },
+                  "dataFromSuccess" : {
+                    "type" : "variable"
+                  },
+                  "closeOnSuccess" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "modalId" : {
+                    "type" : "constant",
+                    "value" : ""
                   }
                 },
                 "reference" : "2ea47633-fc93-41d8-bb50-6fe86f50b513",
@@ -315,6 +430,14 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "top"
+                  },
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 4
                   }
                 },
                 "reference" : "d1b7ae16-4457-444a-8a54-10e1a0cfec4a",
@@ -379,6 +502,21 @@
       "value" : [
         "../{{context.contrato_ref.link}}"
       ],
+      "exposed" : false
+    },
+    "contratoTxt" : {
+      "type" : "url",
+      "value" : [
+        "../API/bpm/document/{{context.plantilla.documentId}}"
+      ],
+      "exposed" : false
+    },
+    "contratoContenido" : {
+      "type" : "url",
+      "value" : [
+        "../../../API/bpm/document/{{taskInput.plantilla.documentId}}/content"
+      ],
+      "advancedOptions" : { },
       "exposed" : false
     }
   },

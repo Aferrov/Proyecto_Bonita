@@ -210,7 +210,7 @@
               <referencedElements xmi:type="process:Document" xmi:id="_vEISYE91EfCL0NdktLx62A" name="documentoReclamo"/>
             </leftOperand>
             <rightOperand xmi:type="expression:Expression" xmi:id="_SCZBgk91EfCL0NdktLx62A" name="newScript()" content="import org.bonitasoft.engine.bpm.document.DocumentValue&#xD;&#xA;import java.nio.charset.StandardCharsets&#xD;&#xA;&#xD;&#xA;def contenido = &quot;&quot;&quot;\&#xD;&#xA;RECLAMO VALIDADO&#xD;&#xA;&#xD;&#xA;Tipo de Reclamo: ${reclamo.tipoReclamo}&#xD;&#xA;Observación: ${reclamo.observacion}&#xD;&#xA;Fecha: ${new Date()}&#x9;&#xD;&#xA;&quot;&quot;&quot;&#xD;&#xA;&#xD;&#xA;byte[] datos = contenido.getBytes(StandardCharsets.UTF_8)&#xD;&#xA;&#xD;&#xA;return new DocumentValue(datos, &quot;reclamo-validado.txt&quot;, &quot;text/plain&quot;)&#xD;&#xA;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="org.bonitasoft.engine.bpm.document.DocumentValue">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="__PbM4FMFEfCjLZZ53_Gldw" name="reclamo" dataType="_VJBwU0ZSEfCLa7V-PDqTOw" className="com.company.model.ReclamoData"/>
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_TFg90FMXEfCjLZZ53_Gldw" name="reclamo" dataType="_VJBwU0ZSEfCLa7V-PDqTOw" className="com.company.model.ReclamoData"/>
             </rightOperand>
             <operator xmi:type="expression:Operator" xmi:id="_SCZBg091EfCL0NdktLx62A" type="DOCUMENT_CREATE_UPDATE"/>
           </operations>

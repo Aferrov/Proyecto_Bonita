@@ -18,7 +18,7 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_EW4A9z9UEfClu9HnIrL2vA" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_EW4A9j9UEfClu9HnIrL2vA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_Figtqj9UEfClu9HnIrL2vA">
-            <targetForm xmi:type="expression:Expression" xmi:id="_0Ty_EFMAEfCjLZZ53_Gldw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_bQAFMFPWEfC4W5GJdWZagg" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_FigtqT9UEfClu9HnIrL2vA"/>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_FigtrD9UEfClu9HnIrL2vA" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
@@ -83,9 +83,8 @@
             <leftOperand xmi:type="expression:Expression" xmi:id="_1asPUVL4EfCjLZZ53_Gldw" name="plantilla" content="plantilla" type="DOCUMENT_REF_TYPE">
               <referencedElements xmi:type="process:Document" xmi:id="_2QAGsFL4EfCjLZZ53_Gldw" name="plantilla"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_1asPUlL4EfCjLZZ53_Gldw" name="newScript()" content="Map&lt;String, Object> datos = new HashMap&lt;>();&#xD;&#xA;datos.put(&quot;nombre&quot;, contrato.getSolicitante);&#xD;&#xA;datos.put(&quot;fecha&quot;, contrato.getFechaContrato().toString());&#xD;&#xA;datos.put(&quot;monto&quot;, contrato.getMonto());&#xD;&#xA;&#xD;&#xA;return apiAccessor.getDocumentGenerator().generateDocument(&quot;plantilla&quot;, datos);&#xD;&#xA;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="org.bonitasoft.engine.bpm.document.DocumentValue">
-              <referencedElements xmi:type="expression:Expression" xmi:id="_9x5J0FMDEfCjLZZ53_Gldw" name="apiAccessor" content="apiAccessor" type="TYPE_ENGINE_CONSTANT" returnType="org.bonitasoft.engine.api.APIAccessor"/>
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_9x5J0VMDEfCjLZZ53_Gldw" name="contrato" dataType="_Bk_4xD87EfClu9HnIrL2vA" className="com.company.model.ContratoData"/>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_1asPUlL4EfCjLZZ53_Gldw" name="newScript()" content="import org.bonitasoft.engine.bpm.document.DocumentValue&#xD;&#xA;&#xD;&#xA;// Obtener datos del contrato&#xD;&#xA;def nombre = contrato.solicitante&#xD;&#xA;def fecha = contrato.fechaContrato.toString()&#xD;&#xA;def monto = contrato.monto.toString()&#xD;&#xA;&#xD;&#xA;// Contenido como texto plano&#xD;&#xA;def contenido = &quot;&quot;&quot;&#xD;&#xA;CONTRATO DE SERVICIO&#xD;&#xA;&#xD;&#xA;Nombre del Cliente: ${nombre}&#xD;&#xA;Fecha de Contrato: ${fecha}&#xD;&#xA;Monto del Contrato: S/ ${monto}&#xD;&#xA;&#xD;&#xA;Gracias por su confianza.&#xD;&#xA;&quot;&quot;&quot;&#xD;&#xA;&#xD;&#xA;// Crear el documento con texto plano&#xD;&#xA;return new DocumentValue(&#xD;&#xA;&#x9;contenido.getBytes(&quot;UTF-8&quot;),             // contenido como byte[]&#xD;&#xA;&#x9;&quot;text/plain&quot;,                            // mime type para .txt&#xD;&#xA;&#x9;&quot;Contrato_${nombre.replaceAll(&quot; &quot;, &quot;_&quot;)}.txt&quot; // nombre de archivo&#xD;&#xA;)&#xD;&#xA;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="org.bonitasoft.engine.bpm.document.DocumentValue">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_Wuuc8FPXEfC4W5GJdWZagg" name="contrato" dataType="_Bk_4xD87EfClu9HnIrL2vA" className="com.company.model.ContratoData"/>
             </rightOperand>
             <operator xmi:type="expression:Operator" xmi:id="_1asPU1L4EfCjLZZ53_Gldw" type="DOCUMENT_CREATE_UPDATE"/>
           </operations>
@@ -99,15 +98,30 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_WD9nkFL5EfCjLZZ53_Gldw" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_WD9AgFL5EfCjLZZ53_Gldw" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_WD9nkVL5EfCjLZZ53_Gldw" name="" content="" returnTypeFixed="true"/>
+          <operations xmi:type="expression:Operation" xmi:id="_M3Fx0FPJEfC4W5GJdWZagg">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_M3Fx0VPJEfC4W5GJdWZagg" name="contrato" content="contrato" type="TYPE_VARIABLE" returnType="com.company.model.ContratoData">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_M3Fx0lPJEfC4W5GJdWZagg" name="contrato" dataType="_Bk_4xD87EfClu9HnIrL2vA" className="com.company.model.ContratoData"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_M3Fx01PJEfC4W5GJdWZagg" name="contratoInput.estaAprobado" content="contratoInput?.estaAprobado" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_M3Fx1FPJEfC4W5GJdWZagg" name="contratoInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_M3Fx1VPJEfC4W5GJdWZagg" type="JAVA_METHOD" expression="setEstaAprobado">
+              <inputTypes>java.lang.Boolean</inputTypes>
+            </operator>
+          </operations>
           <loopCondition xmi:type="expression:Expression" xmi:id="_WD9nklL5EfCjLZZ53_Gldw" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_WD9nk1L5EfCjLZZ53_Gldw" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_WD9nlFL5EfCjLZZ53_Gldw" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_WD9nllL5EfCjLZZ53_Gldw" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_WD9nlVL5EfCjLZZ53_Gldw" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-          <formMapping xmi:type="process:FormMapping" xmi:id="_W1l42lL5EfCjLZZ53_Gldw" type="URL" url="mostrarContrato">
+          <formMapping xmi:type="process:FormMapping" xmi:id="_W1l42lL5EfCjLZZ53_Gldw" url="mostrarContrato">
             <targetForm xmi:type="expression:Expression" xmi:id="_oo4UQFL5EfCjLZZ53_Gldw" name="mostrarContrato" content="64202dcf-cbf4-4d79-b213-d32ccb166c69" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
-          <contract xmi:type="process:Contract" xmi:id="_W1l42VL5EfCjLZZ53_Gldw"/>
+          <contract xmi:type="process:Contract" xmi:id="_W1l42VL5EfCjLZZ53_Gldw">
+            <inputs xmi:type="process:ContractInput" xmi:id="_M3D8oFPJEfC4W5GJdWZagg" name="contratoInput" type="COMPLEX" dataReference="contrato" createMode="false">
+              <inputs xmi:type="process:ContractInput" xmi:id="_M3D8oVPJEfC4W5GJdWZagg" name="estaAprobado" type="BOOLEAN" createMode="false"/>
+            </inputs>
+          </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_W1l43FL5EfCjLZZ53_Gldw" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
       </elements>
@@ -275,7 +289,7 @@
           <inputNames>contratoInput</inputNames>
         </constraints>
       </contract>
-      <documents xmi:type="process:Document" xmi:id="_PfFawFL4EfCjLZZ53_Gldw" name="plantilla" defaultValueIdOfDocumentStore="plantilla.docx" documentType="INTERNAL">
+      <documents xmi:type="process:Document" xmi:id="_PfFawFL4EfCjLZZ53_Gldw" name="plantilla" defaultValueIdOfDocumentStore="plantilla.docx">
         <mimeType xmi:type="expression:Expression" xmi:id="_PfFawVL4EfCjLZZ53_Gldw" name="" content="" returnTypeFixed="true"/>
         <url xmi:type="expression:Expression" xmi:id="_PfFawlL4EfCjLZZ53_Gldw" name="" content="" returnTypeFixed="true"/>
         <initialMultipleContent xmi:type="expression:Expression" xmi:id="_PfFaw1L4EfCjLZZ53_Gldw" name="" content="" type="TYPE_READ_ONLY_SCRIPT" returnType="java.util.List" returnTypeFixed="true"/>

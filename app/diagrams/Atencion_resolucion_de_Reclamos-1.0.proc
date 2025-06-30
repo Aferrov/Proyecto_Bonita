@@ -448,7 +448,7 @@
             </children>
             <children xmi:type="notation:Shape" xmi:id="_5mvZ4EqxEfCUZveMd574KQ" type="3027" element="_5muy0EqxEfCUZveMd574KQ" fontName="Segoe UI" fillColor="14334392" lineColor="10710316">
               <children xmi:type="notation:DecorationNode" xmi:id="_5mvZ4kqxEfCUZveMd574KQ" type="5017"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5mvZ4UqxEfCUZveMd574KQ" x="128" y="219" width="146" height="73"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5mvZ4UqxEfCUZveMd574KQ" x="115" y="219" width="146" height="73"/>
             </children>
             <children xmi:type="notation:Shape" xmi:id="_C0F6QEqyEfCUZveMd574KQ" type="3003" element="_C0FTMEqyEfCUZveMd574KQ" fontName="Segoe UI">
               <children xmi:type="notation:DecorationNode" xmi:id="_C0F6QkqyEfCUZveMd574KQ" type="5025">

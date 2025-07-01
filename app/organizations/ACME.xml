@@ -547,6 +547,16 @@
       <enabled>true</enabled>
       <password encrypted="false">bpm</password>
     </user>
+    <user userName="wilmc">
+      <firstName>wil</firstName>
+      <lastName>mc</lastName>
+      <title>mc</title>
+      <jobTitle>stfu</jobTitle>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
   </users>
   <roles>
     <role name="member">
@@ -555,6 +565,9 @@
     </role>
     <role name="validador">
       <displayName>validador</displayName>
+    </role>
+    <role name="Cliente">
+      <displayName>Cliente</displayName>
     </role>
   </roles>
   <groups>
@@ -736,6 +749,16 @@
       <roleName>member</roleName>
       <groupName>north_america</groupName>
       <groupParentPath>/acme/sales</groupParentPath>
+    </membership>
+    <membership>
+      <userName>wilmc</userName>
+      <roleName>member</roleName>
+      <groupName>acme</groupName>
+    </membership>
+    <membership>
+      <userName>wilmc</userName>
+      <roleName>Cliente</roleName>
+      <groupName>acme</groupName>
     </membership>
   </memberships>
 </organization:Organization>

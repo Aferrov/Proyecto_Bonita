@@ -4,7 +4,7 @@
   "type" : "page",
   "uuid" : "c79717a9-4416-4892-b635-e4e54e4cc424",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1751773387056,
+  "lastUpdate" : 1751827887303,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -14,7 +14,7 @@
           "xs" : 12,
           "sm" : 12,
           "md" : 12,
-          "lg" : 4
+          "lg" : 12
         },
         "propertyValues" : {
           "cssClasses" : {
@@ -29,7 +29,7 @@
             "type" : "variable"
           }
         },
-        "reference" : "afb23255-05c3-4862-bfc8-7c21a3c26c0e",
+        "reference" : "410c19f9-acca-4ac3-a30f-366a959cb66a",
         "hasValidationError" : false,
         "id" : "pbContainer",
         "rows" : [
@@ -37,8 +37,8 @@
             {
               "type" : "component",
               "dimension" : {
-                "xs" : 12,
-                "sm" : 12,
+                "xs" : 6,
+                "sm" : 6,
                 "md" : 6,
                 "lg" : 6
               },
@@ -68,17 +68,17 @@
                   "value" : "right"
                 }
               },
-              "reference" : "19073453-3674-4758-8e59-0609789e402e",
+              "reference" : "8ec5f58b-7a79-462b-b209-822a28b59ee5",
               "hasValidationError" : false,
               "id" : "pbTitle"
             },
             {
               "type" : "component",
               "dimension" : {
-                "xs" : 12,
-                "sm" : 12,
+                "xs" : 2,
+                "sm" : 2,
                 "md" : 2,
-                "lg" : 6
+                "lg" : 2
               },
               "propertyValues" : {
                 "cssClasses" : {
@@ -104,7 +104,7 @@
                   "type" : "interpolation"
                 }
               },
-              "reference" : "413b2225-9ba5-441d-bded-3bc65060af5c",
+              "reference" : "d208ea54-404f-4155-a310-ca2de0242989",
               "hasValidationError" : false,
               "id" : "pbImage"
             }
@@ -143,7 +143,7 @@
             "type" : "interpolation"
           }
         },
-        "reference" : "1e9dc34c-8fa6-4b72-b57d-bebba706b2c6",
+        "reference" : "80bbf430-39ab-4dff-b38f-8aa105f0936b",
         "hasValidationError" : false,
         "id" : "pbImage"
       }
@@ -170,7 +170,7 @@
             "type" : "variable"
           }
         },
-        "reference" : "0c0e3ff6-7bbf-4051-baed-d90963051610",
+        "reference" : "a7e13a63-f2c4-4ea5-9e16-6b2607e72964",
         "hasValidationError" : false,
         "id" : "pbContainer",
         "rows" : [
@@ -178,10 +178,10 @@
             {
               "type" : "component",
               "dimension" : {
-                "xs" : 12,
-                "sm" : 12,
-                "md" : 4,
-                "lg" : 4
+                "xs" : 3,
+                "sm" : 3,
+                "md" : 3,
+                "lg" : 3
               },
               "propertyValues" : {
                 "cssClasses" : {
@@ -207,17 +207,45 @@
                   "type" : "interpolation"
                 }
               },
-              "reference" : "c374d2b2-70f0-4f7b-9361-c51502d97150",
+              "reference" : "9150afda-60ad-4c07-ad39-623a92afbb99",
               "hasValidationError" : false,
               "id" : "pbImage"
             },
             {
+              "type" : "container",
+              "dimension" : {
+                "xs" : 1,
+                "sm" : 1,
+                "md" : 1,
+                "lg" : 1
+              },
+              "propertyValues" : {
+                "cssClasses" : {
+                  "type" : "constant",
+                  "value" : ""
+                },
+                "hidden" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "repeatedCollection" : {
+                  "type" : "variable"
+                }
+              },
+              "reference" : "fd871ad3-9787-4393-9944-0f849d900eed",
+              "hasValidationError" : false,
+              "id" : "pbContainer",
+              "rows" : [
+                [ ]
+              ]
+            },
+            {
               "type" : "component",
               "dimension" : {
-                "xs" : 12,
-                "sm" : 12,
-                "md" : 4,
-                "lg" : 4
+                "xs" : 3,
+                "sm" : 3,
+                "md" : 3,
+                "lg" : 3
               },
               "propertyValues" : {
                 "cssClasses" : {
@@ -243,17 +271,45 @@
                   "type" : "interpolation"
                 }
               },
-              "reference" : "e7a5f17b-cf9c-488f-b599-6a456e2a5c61",
+              "reference" : "d54c71e9-74b5-4c14-8e6b-a05337830a6e",
               "hasValidationError" : false,
               "id" : "pbImage"
             },
             {
+              "type" : "container",
+              "dimension" : {
+                "xs" : 1,
+                "sm" : 1,
+                "md" : 1,
+                "lg" : 1
+              },
+              "propertyValues" : {
+                "cssClasses" : {
+                  "type" : "constant",
+                  "value" : ""
+                },
+                "hidden" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "repeatedCollection" : {
+                  "type" : "variable"
+                }
+              },
+              "reference" : "f933e61e-f4a2-42c9-af21-2e45e82af73a",
+              "hasValidationError" : false,
+              "id" : "pbContainer",
+              "rows" : [
+                [ ]
+              ]
+            },
+            {
               "type" : "component",
               "dimension" : {
-                "xs" : 12,
-                "sm" : 12,
-                "md" : 4,
-                "lg" : 4
+                "xs" : 3,
+                "sm" : 3,
+                "md" : 3,
+                "lg" : 3
               },
               "propertyValues" : {
                 "cssClasses" : {
@@ -279,19 +335,19 @@
                   "type" : "interpolation"
                 }
               },
-              "reference" : "ca24df57-43bf-4b11-bd34-a163d0403ee7",
+              "reference" : "39a1fa9f-797c-4dad-929d-0cd099aa4bbe",
               "hasValidationError" : false,
               "id" : "pbImage"
             }
           ],
           [
             {
-              "type" : "component",
+              "type" : "container",
               "dimension" : {
                 "xs" : 12,
                 "sm" : 12,
-                "md" : 4,
-                "lg" : 4
+                "md" : 12,
+                "lg" : 12
               },
               "propertyValues" : {
                 "cssClasses" : {
@@ -302,255 +358,286 @@
                   "type" : "constant",
                   "value" : false
                 },
-                "disabled" : {
-                  "type" : "constant",
-                  "value" : false
-                },
-                "allowHTML" : {
-                  "type" : "constant",
-                  "value" : false
-                },
-                "label" : {
-                  "type" : "interpolation",
-                  "value" : "Aperturar cuenta"
-                },
-                "alignment" : {
-                  "type" : "constant",
-                  "value" : "center"
-                },
-                "buttonStyle" : {
-                  "type" : "constant",
-                  "value" : "primary"
-                },
-                "action" : {
-                  "type" : "constant",
-                  "value" : "Submit task"
-                },
-                "assign" : {
-                  "type" : "constant",
-                  "value" : false
-                },
-                "url" : {
-                  "type" : "interpolation"
-                },
-                "responseStatusCode" : {
-                  "type" : "variable"
-                },
-                "dataToSend" : {
-                  "type" : "constant"
-                },
-                "dataFromSuccess" : {
-                  "type" : "variable"
-                },
-                "closeOnSuccess" : {
-                  "type" : "constant",
-                  "value" : false
-                },
-                "dataFromError" : {
-                  "type" : "variable"
-                },
-                "targetUrlOnSuccess" : {
-                  "type" : "interpolation"
-                },
-                "collectionToModify" : {
-                  "type" : "variable"
-                },
-                "modalId" : {
-                  "type" : "constant",
-                  "value" : ""
-                },
-                "collectionPosition" : {
-                  "type" : "constant",
-                  "value" : "Last"
-                },
-                "valueToAdd" : {
-                  "type" : "constant"
-                },
-                "removeItem" : {
+                "repeatedCollection" : {
                   "type" : "variable"
                 }
               },
-              "reference" : "7b35463e-7c86-430d-be9d-6277bb60b20b",
+              "reference" : "a8281127-2ac1-43be-8d3e-77bca095c9f7",
               "hasValidationError" : false,
-              "id" : "pbButton"
-            },
-            {
-              "type" : "component",
-              "dimension" : {
-                "xs" : 12,
-                "sm" : 12,
-                "md" : 4,
-                "lg" : 4
-              },
-              "propertyValues" : {
-                "cssClasses" : {
-                  "type" : "constant",
-                  "value" : ""
-                },
-                "hidden" : {
-                  "type" : "constant",
-                  "value" : false
-                },
-                "disabled" : {
-                  "type" : "constant",
-                  "value" : false
-                },
-                "allowHTML" : {
-                  "type" : "constant",
-                  "value" : false
-                },
-                "label" : {
-                  "type" : "interpolation",
-                  "value" : "Solicitar credito"
-                },
-                "alignment" : {
-                  "type" : "constant",
-                  "value" : "center"
-                },
-                "buttonStyle" : {
-                  "type" : "constant",
-                  "value" : "primary"
-                },
-                "action" : {
-                  "type" : "constant",
-                  "value" : "Submit task"
-                },
-                "assign" : {
-                  "type" : "constant",
-                  "value" : false
-                },
-                "url" : {
-                  "type" : "interpolation"
-                },
-                "responseStatusCode" : {
-                  "type" : "variable"
-                },
-                "dataToSend" : {
-                  "type" : "constant"
-                },
-                "dataFromSuccess" : {
-                  "type" : "variable"
-                },
-                "closeOnSuccess" : {
-                  "type" : "constant",
-                  "value" : false
-                },
-                "dataFromError" : {
-                  "type" : "variable"
-                },
-                "targetUrlOnSuccess" : {
-                  "type" : "interpolation"
-                },
-                "collectionToModify" : {
-                  "type" : "variable"
-                },
-                "modalId" : {
-                  "type" : "constant",
-                  "value" : ""
-                },
-                "collectionPosition" : {
-                  "type" : "constant",
-                  "value" : "Last"
-                },
-                "valueToAdd" : {
-                  "type" : "constant"
-                },
-                "removeItem" : {
-                  "type" : "variable"
-                }
-              },
-              "reference" : "85e704bc-c280-4fa9-bb3f-baba5635915a",
-              "hasValidationError" : false,
-              "id" : "pbButton"
-            },
-            {
-              "type" : "component",
-              "dimension" : {
-                "xs" : 12,
-                "sm" : 12,
-                "md" : 4,
-                "lg" : 4
-              },
-              "propertyValues" : {
-                "cssClasses" : {
-                  "type" : "constant",
-                  "value" : ""
-                },
-                "hidden" : {
-                  "type" : "constant",
-                  "value" : false
-                },
-                "disabled" : {
-                  "type" : "constant",
-                  "value" : false
-                },
-                "allowHTML" : {
-                  "type" : "constant",
-                  "value" : false
-                },
-                "label" : {
-                  "type" : "interpolation",
-                  "value" : "Generar reclamo"
-                },
-                "alignment" : {
-                  "type" : "constant",
-                  "value" : "center"
-                },
-                "buttonStyle" : {
-                  "type" : "constant",
-                  "value" : "primary"
-                },
-                "action" : {
-                  "type" : "constant",
-                  "value" : "Submit task"
-                },
-                "assign" : {
-                  "type" : "constant",
-                  "value" : false
-                },
-                "url" : {
-                  "type" : "interpolation"
-                },
-                "responseStatusCode" : {
-                  "type" : "variable"
-                },
-                "dataToSend" : {
-                  "type" : "constant"
-                },
-                "dataFromSuccess" : {
-                  "type" : "variable"
-                },
-                "closeOnSuccess" : {
-                  "type" : "constant",
-                  "value" : false
-                },
-                "dataFromError" : {
-                  "type" : "variable"
-                },
-                "targetUrlOnSuccess" : {
-                  "type" : "interpolation"
-                },
-                "collectionToModify" : {
-                  "type" : "variable"
-                },
-                "modalId" : {
-                  "type" : "constant",
-                  "value" : ""
-                },
-                "collectionPosition" : {
-                  "type" : "constant",
-                  "value" : "Last"
-                },
-                "valueToAdd" : {
-                  "type" : "constant"
-                },
-                "removeItem" : {
-                  "type" : "variable"
-                }
-              },
-              "reference" : "9a43bfec-ba4c-40ee-b0b7-391a65c85149",
-              "hasValidationError" : false,
-              "id" : "pbButton"
+              "id" : "pbContainer",
+              "rows" : [
+                [
+                  {
+                    "type" : "component",
+                    "dimension" : {
+                      "xs" : 3,
+                      "sm" : 3,
+                      "md" : 3,
+                      "lg" : 3
+                    },
+                    "propertyValues" : {
+                      "cssClasses" : {
+                        "type" : "constant",
+                        "value" : ""
+                      },
+                      "hidden" : {
+                        "type" : "constant",
+                        "value" : false
+                      },
+                      "allowHTML" : {
+                        "type" : "constant",
+                        "value" : false
+                      },
+                      "text" : {
+                        "type" : "interpolation",
+                        "value" : "Aperturar cuenta"
+                      },
+                      "type" : {
+                        "type" : "constant",
+                        "value" : "URL"
+                      },
+                      "targetUrl" : {
+                        "type" : "constant",
+                        "value" : "http://localhost:24312/bonita/apps/userAppBonita/task-list/#!/process/Aperturar_cuenta/1.0/start"
+                      },
+                      "pageToken" : {
+                        "type" : "constant"
+                      },
+                      "processName" : {
+                        "type" : "constant"
+                      },
+                      "processVersion" : {
+                        "type" : "constant"
+                      },
+                      "taskId" : {
+                        "type" : "constant"
+                      },
+                      "caseId" : {
+                        "type" : "constant"
+                      },
+                      "target" : {
+                        "type" : "constant",
+                        "value" : "_self"
+                      },
+                      "appToken" : {
+                        "type" : "constant"
+                      },
+                      "urlParams" : {
+                        "type" : "constant"
+                      },
+                      "alignment" : {
+                        "type" : "constant",
+                        "value" : "center"
+                      },
+                      "buttonStyle" : {
+                        "type" : "constant",
+                        "value" : "primary"
+                      }
+                    },
+                    "reference" : "2ba3007b-f3de-4ea9-b9eb-e93bfa79b159",
+                    "hasValidationError" : false,
+                    "id" : "pbLink"
+                  },
+                  {
+                    "type" : "container",
+                    "dimension" : {
+                      "xs" : 1,
+                      "sm" : 1,
+                      "md" : 1,
+                      "lg" : 1
+                    },
+                    "propertyValues" : {
+                      "cssClasses" : {
+                        "type" : "constant",
+                        "value" : ""
+                      },
+                      "hidden" : {
+                        "type" : "constant",
+                        "value" : false
+                      },
+                      "repeatedCollection" : {
+                        "type" : "variable"
+                      }
+                    },
+                    "reference" : "8f737c41-5885-4d62-8da2-f4d84e4c4bef",
+                    "hasValidationError" : false,
+                    "id" : "pbContainer",
+                    "rows" : [
+                      [ ]
+                    ]
+                  },
+                  {
+                    "type" : "component",
+                    "dimension" : {
+                      "xs" : 3,
+                      "sm" : 3,
+                      "md" : 3,
+                      "lg" : 3
+                    },
+                    "propertyValues" : {
+                      "cssClasses" : {
+                        "type" : "constant",
+                        "value" : ""
+                      },
+                      "hidden" : {
+                        "type" : "constant",
+                        "value" : false
+                      },
+                      "allowHTML" : {
+                        "type" : "constant",
+                        "value" : false
+                      },
+                      "text" : {
+                        "type" : "interpolation",
+                        "value" : "Solicitar credito"
+                      },
+                      "type" : {
+                        "type" : "constant",
+                        "value" : "URL"
+                      },
+                      "targetUrl" : {
+                        "type" : "constant",
+                        "value" : "http://"
+                      },
+                      "pageToken" : {
+                        "type" : "constant"
+                      },
+                      "processName" : {
+                        "type" : "constant"
+                      },
+                      "processVersion" : {
+                        "type" : "constant"
+                      },
+                      "taskId" : {
+                        "type" : "constant"
+                      },
+                      "caseId" : {
+                        "type" : "constant"
+                      },
+                      "target" : {
+                        "type" : "constant",
+                        "value" : "_self"
+                      },
+                      "appToken" : {
+                        "type" : "constant"
+                      },
+                      "urlParams" : {
+                        "type" : "constant"
+                      },
+                      "alignment" : {
+                        "type" : "constant",
+                        "value" : "center"
+                      },
+                      "buttonStyle" : {
+                        "type" : "constant",
+                        "value" : "primary"
+                      }
+                    },
+                    "reference" : "06cb0a60-ff89-4ce3-8805-443c87a62012",
+                    "hasValidationError" : false,
+                    "id" : "pbLink"
+                  },
+                  {
+                    "type" : "container",
+                    "dimension" : {
+                      "xs" : 1,
+                      "sm" : 1,
+                      "md" : 1,
+                      "lg" : 1
+                    },
+                    "propertyValues" : {
+                      "cssClasses" : {
+                        "type" : "constant",
+                        "value" : ""
+                      },
+                      "hidden" : {
+                        "type" : "constant",
+                        "value" : false
+                      },
+                      "repeatedCollection" : {
+                        "type" : "variable"
+                      }
+                    },
+                    "reference" : "ca6c388b-9755-488f-a980-0a36461d88d9",
+                    "hasValidationError" : false,
+                    "id" : "pbContainer",
+                    "rows" : [
+                      [ ]
+                    ]
+                  },
+                  {
+                    "type" : "component",
+                    "dimension" : {
+                      "xs" : 3,
+                      "sm" : 3,
+                      "md" : 3,
+                      "lg" : 3
+                    },
+                    "propertyValues" : {
+                      "cssClasses" : {
+                        "type" : "constant",
+                        "value" : ""
+                      },
+                      "hidden" : {
+                        "type" : "constant",
+                        "value" : false
+                      },
+                      "allowHTML" : {
+                        "type" : "constant",
+                        "value" : false
+                      },
+                      "text" : {
+                        "type" : "interpolation",
+                        "value" : "Generar reclamo"
+                      },
+                      "type" : {
+                        "type" : "constant",
+                        "value" : "URL"
+                      },
+                      "targetUrl" : {
+                        "type" : "constant",
+                        "value" : "http://"
+                      },
+                      "pageToken" : {
+                        "type" : "constant"
+                      },
+                      "processName" : {
+                        "type" : "constant"
+                      },
+                      "processVersion" : {
+                        "type" : "constant"
+                      },
+                      "taskId" : {
+                        "type" : "constant"
+                      },
+                      "caseId" : {
+                        "type" : "constant"
+                      },
+                      "target" : {
+                        "type" : "constant",
+                        "value" : "_self"
+                      },
+                      "appToken" : {
+                        "type" : "constant"
+                      },
+                      "urlParams" : {
+                        "type" : "constant"
+                      },
+                      "alignment" : {
+                        "type" : "constant",
+                        "value" : "center"
+                      },
+                      "buttonStyle" : {
+                        "type" : "constant",
+                        "value" : "primary"
+                      }
+                    },
+                    "reference" : "174308f8-1156-4b8e-9539-706b62858e35",
+                    "hasValidationError" : false,
+                    "id" : "pbLink"
+                  }
+                ]
+              ]
             }
           ]
         ]
@@ -562,6 +649,13 @@
       "type" : "constant",
       "value" : [
         "\"false\""
+      ],
+      "exposed" : false
+    },
+    "proceso1" : {
+      "type" : "url",
+      "value" : [
+        "../API/bpm/process?f=name=Aperturar_cuenta&f=version=1.0"
       ],
       "exposed" : false
     }

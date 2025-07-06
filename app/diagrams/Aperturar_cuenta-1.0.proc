@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:decision="http://www.bonitasoft.org/ns/bpm/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/bpm/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/bpm/process">
-  <process:MainProcess xmi:id="_j_ZMYFWFEfC9D90ieMX84w" name="MiDiagrama2" bonitaModelVersion="8">
+  <process:MainProcess xmi:id="_j_ZMYFWFEfC9D90ieMX84w" name="Aperturar_cuenta" bonitaModelVersion="8">
     <elements xmi:type="process:Pool" xmi:id="_j_ZMYVWFEfC9D90ieMX84w" name="Pool3">
       <elements xmi:type="process:Lane" xmi:id="_j_ZMYlWFEfC9D90ieMX84w" name="Cliente" actor="_j_ZMe1WFEfC9D90ieMX84w">
         <elements xmi:type="process:StartEvent" xmi:id="_j_ZMY1WFEfC9D90ieMX84w" name="Solicitud de apertura" outgoing="_j_ZMeFWFEfC9D90ieMX84w">

@@ -46,7 +46,7 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_HujbWFU1EfCqsOi0OZrrPA" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_HujbV1U1EfCqsOi0OZrrPA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_-XaCuVYZEfC1uelvT2T1qg">
-            <targetForm xmi:type="expression:Expression" xmi:id="_-XaCulYZEfC1uelvT2T1qg" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_XTbFIFocEfC78Zgtw890UA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_-XaCuFYZEfC1uelvT2T1qg"/>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_-XaCu1YZEfC1uelvT2T1qg" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
@@ -67,7 +67,7 @@
         <defaultValue xmi:type="expression:Expression" xmi:id="_Z_pGEVWCEfC7Uvo2OZIXqg" name="init_reclamito()" content="'ninguno'" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT"/>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_--FERFU0EfCqsOi0OZrrPA">
-        <targetForm xmi:type="expression:Expression" xmi:id="_DZWmIFW4EfC7Uvo2OZIXqg" name="newForm3" content="30688902-54e4-42a2-8c29-b238b5dd31dc" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_XTbFIVocEfC78Zgtw890UA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_--FERlU0EfCqsOi0OZrrPA">
         <targetForm xmi:type="expression:Expression" xmi:id="_--FER1U0EfCqsOi0OZrrPA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>

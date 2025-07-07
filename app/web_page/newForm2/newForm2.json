@@ -1,20 +1,132 @@
 {
-  "id" : "ingresarContrato",
-  "name" : "ingresarContrato",
+  "id" : "newForm2",
+  "name" : "newForm2",
   "type" : "form",
-  "uuid" : "584aafc7-ecef-4005-9f37-ac6702151d2a",
+  "uuid" : "3a60b387-b76e-44e8-871c-e1195ab40822",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1751870066182,
+  "lastUpdate" : 1751868604044,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
+    [
+      {
+        "type" : "container",
+        "dimension" : {
+          "xs" : 12
+        },
+        "propertyValues" : { },
+        "reference" : "ffc57b09-1406-4a2d-bd00-8deb37eaa7bf",
+        "hasValidationError" : false,
+        "id" : "pbContainer",
+        "rows" : [
+          [
+            {
+              "type" : "component",
+              "dimension" : {
+                "md" : 12,
+                "sm" : 12,
+                "xs" : 12,
+                "lg" : 12
+              },
+              "propertyValues" : {
+                "hidden" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "level" : {
+                  "type" : "constant",
+                  "value" : "Level 1"
+                },
+                "cssClasses" : {
+                  "type" : "constant",
+                  "value" : ""
+                },
+                "text" : {
+                  "type" : "interpolation",
+                  "value" : "{{ task.displayName }}"
+                },
+                "alignment" : {
+                  "type" : "constant",
+                  "value" : "center"
+                },
+                "dimension" : {
+                  "type" : "constant",
+                  "value" : 12
+                }
+              },
+              "reference" : "a02759ab-36fd-4c6f-b644-e95513e8aa40",
+              "hasValidationError" : false,
+              "id" : "pbTitle",
+              "description" : ""
+            }
+          ],
+          [
+            {
+              "type" : "component",
+              "dimension" : {
+                "md" : 12,
+                "sm" : 12,
+                "xs" : 12,
+                "lg" : 12
+              },
+              "propertyValues" : {
+                "allowHtml" : {
+                  "type" : "constant",
+                  "value" : true
+                },
+                "labelHidden" : {
+                  "type" : "constant",
+                  "value" : true
+                },
+                "hidden" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "cssClasses" : {
+                  "type" : "constant",
+                  "value" : ""
+                },
+                "label" : {
+                  "type" : "interpolation"
+                },
+                "text" : {
+                  "type" : "interpolation",
+                  "value" : "{{ task.displayDescription }}"
+                },
+                "alignment" : {
+                  "type" : "constant",
+                  "value" : "left"
+                },
+                "dimension" : {
+                  "type" : "constant",
+                  "value" : 12
+                }
+              },
+              "reference" : "7f6a58d8-ae01-42c2-b6a9-0c437d63a8d7",
+              "hasValidationError" : false,
+              "id" : "pbText",
+              "description" : ""
+            }
+          ]
+        ]
+      }
+    ],
     [
       {
         "type" : "formContainer",
         "dimension" : {
           "xs" : 12
         },
-        "propertyValues" : { },
-        "reference" : "e58373e3-8c82-420d-accc-8d3f953939d2",
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          }
+        },
+        "reference" : "83cf9449-2e01-4277-a06b-1d4faa8abdb7",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -23,7 +135,7 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "5f506fb0-4dd0-44b8-910a-a7044f9fc1cb",
+          "reference" : "caa41b86-7580-414c-b200-0a979c847aed",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
@@ -51,7 +163,7 @@
                   },
                   "text" : {
                     "type" : "interpolation",
-                    "value" : "Contrato"
+                    "value" : "Cuenta"
                   },
                   "alignment" : {
                     "type" : "constant",
@@ -62,7 +174,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "bc9927b2-5385-4220-8bc4-851e10933d0a",
+                "reference" : "3cb99899-178b-4f51-b738-bc4ca20fc648",
                 "hasValidationError" : false,
                 "id" : "pbTitle",
                 "description" : ""
@@ -94,7 +206,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "18999b03-4c2e-4232-a17a-444b58e8ce9d",
+                "reference" : "d24749d4-33ee-48e6-a6db-915ef7fa6106",
                 "hasValidationError" : false,
                 "id" : "pbContainer",
                 "rows" : [
@@ -108,168 +220,42 @@
                         "lg" : 12
                       },
                       "propertyValues" : {
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "required" : {
+                        "allowHtml" : {
                           "type" : "constant",
                           "value" : true
                         },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "minLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "maxLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "readOnly" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Tipo Contrato"
-                        },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 1
-                        },
-                        "placeholder" : {
-                          "type" : "interpolation"
-                        },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "formInput.contratoInput.tipoContrato"
-                        },
-                        "debounce" : {
-                          "type" : "constant",
-                          "value" : 0
-                        },
-                        "type" : {
-                          "type" : "constant",
-                          "value" : "text"
-                        },
-                        "min" : {
-                          "type" : "constant"
-                        },
-                        "max" : {
-                          "type" : "constant"
-                        },
-                        "step" : {
-                          "type" : "constant",
-                          "value" : 1
-                        }
-                      },
-                      "reference" : "d136d445-9cbd-46b7-99b2-56782fc7241d",
-                      "hasValidationError" : false,
-                      "id" : "pbInput"
-                    }
-                  ],
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "md" : 12,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 12
-                      },
-                      "propertyValues" : {
                         "labelHidden" : {
                           "type" : "constant",
                           "value" : false
                         },
                         "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
+                          "type" : "expression",
+                          "value" : "!cuenta.cliente"
                         },
                         "cssClasses" : {
                           "type" : "constant",
                           "value" : ""
                         },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 1
-                        },
-                        "readOnly" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Solicitante"
+                          "value" : "Cliente"
                         },
-                        "placeholder" : {
-                          "type" : "constant"
+                        "text" : {
+                          "type" : "interpolation",
+                          "value" : "{{cuenta.cliente}}"
                         },
-                        "type" : {
+                        "alignment" : {
                           "type" : "constant",
-                          "value" : "text"
+                          "value" : "left"
                         },
                         "dimension" : {
                           "type" : "constant",
                           "value" : 12
-                        },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "formInput.contratoInput.solicitante"
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "minLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "maxLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "debounce" : {
-                          "type" : "constant",
-                          "value" : 0
-                        },
-                        "min" : {
-                          "type" : "constant"
-                        },
-                        "max" : {
-                          "type" : "constant"
-                        },
-                        "step" : {
-                          "type" : "constant",
-                          "value" : 1
                         }
                       },
-                      "reference" : "89d88a21-6ac8-443a-9544-b546fa9aa6f7",
+                      "reference" : "5297a8f3-34f5-4a85-ad66-ac5ee783042d",
                       "hasValidationError" : false,
-                      "id" : "pbInput",
+                      "id" : "pbText",
                       "description" : ""
                     }
                   ],
@@ -283,66 +269,70 @@
                         "lg" : 12
                       },
                       "propertyValues" : {
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
                         "hidden" : {
                           "type" : "constant",
                           "value" : false
                         },
-                        "readOnly" : {
+                        "dateFormat" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : "MM/dd/yyyy"
                         },
-                        "required" : {
+                        "cssClasses" : {
                           "type" : "constant",
-                          "value" : true
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Fecha Contrato"
-                        },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
+                          "value" : ""
                         },
                         "labelWidth" : {
                           "type" : "constant",
                           "value" : 1
                         },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "formInput.contratoInput.fechaContrato"
-                        },
-                        "dateFormat" : {
+                        "readOnly" : {
                           "type" : "constant",
-                          "value" : "dd/MM/yyyy"
+                          "value" : false
                         },
-                        "placeholder" : {
+                        "label" : {
                           "type" : "interpolation",
-                          "value" : "Enter a date (mm/dd/yyyy)"
+                          "value" : "Fecha Apertura"
                         },
-                        "showToday" : {
+                        "type" : {
+                          "type" : "constant"
+                        },
+                        "required" : {
                           "type" : "constant",
                           "value" : false
                         },
                         "todayLabel" : {
-                          "type" : "interpolation",
+                          "type" : "constant",
                           "value" : "Today"
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "showToday" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "placeholder" : {
+                          "type" : "constant",
+                          "value" : "Enter a date (mm/dd/yyyy)"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "cuenta.fechaApertura"
                         }
                       },
-                      "reference" : "fc0f2172-49c2-439a-836f-f21873173379",
+                      "reference" : "242fda65-f033-462e-92ca-73ec2e64b018",
                       "hasValidationError" : false,
-                      "id" : "pbDatePicker"
+                      "id" : "pbDatePicker",
+                      "description" : ""
                     }
                   ],
                   [
@@ -381,11 +371,10 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Monto"
+                          "value" : "Saldo"
                         },
                         "placeholder" : {
-                          "type" : "constant",
-                          "value" : ""
+                          "type" : "constant"
                         },
                         "type" : {
                           "type" : "constant",
@@ -397,41 +386,14 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "formInput.contratoInput.monto"
+                          "value" : "cuenta.saldo"
                         },
                         "required" : {
                           "type" : "constant",
-                          "value" : true
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
                           "value" : false
-                        },
-                        "minLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "maxLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "debounce" : {
-                          "type" : "constant",
-                          "value" : 0
-                        },
-                        "min" : {
-                          "type" : "constant",
-                          "value" : 10
-                        },
-                        "max" : {
-                          "type" : "constant"
-                        },
-                        "step" : {
-                          "type" : "constant",
-                          "value" : 1
                         }
                       },
-                      "reference" : "66ca3e7f-31e1-45af-a97d-fd90da3b2b25",
+                      "reference" : "a4bb8ca6-2bcb-4691-9407-e7cc9d07a831",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -467,7 +429,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Enviar"
+                    "value" : "Submit"
                   },
                   "dataToSend" : {
                     "type" : "expression",
@@ -494,7 +456,7 @@
                   },
                   "action" : {
                     "type" : "constant",
-                    "value" : "Start process"
+                    "value" : "Submit task"
                   },
                   "collectionToModify" : {
                     "type" : "variable"
@@ -513,30 +475,9 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
-                  },
-                  "assign" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "url" : {
-                    "type" : "interpolation"
-                  },
-                  "responseStatusCode" : {
-                    "type" : "variable"
-                  },
-                  "dataFromSuccess" : {
-                    "type" : "variable"
-                  },
-                  "closeOnSuccess" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "modalId" : {
-                    "type" : "constant",
-                    "value" : ""
                   }
                 },
-                "reference" : "3da67e29-889e-4a53-890c-e682a527ea4f",
+                "reference" : "f39832db-8748-4e95-b808-7cbb80db04ca",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
@@ -588,7 +529,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "277d3b32-2ad5-4a93-8492-9eae76c7e7c2",
+                "reference" : "146af417-98b6-4df1-9182-35a9a7ff2076",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
@@ -600,17 +541,10 @@
     ]
   ],
   "variables" : {
-    "formInput" : {
-      "type" : "json",
+    "task" : {
+      "type" : "url",
       "value" : [
-        "{\r",
-        "  \"contratoInput\" : {\r",
-        "    \"tipoContrato\" : \"\",\r",
-        "    \"solicitante\" : \"\",\r",
-        "    \"fechaContrato\" : null,\r",
-        "    \"monto\" : 0\r",
-        "  }\r",
-        "}"
+        "../API/bpm/userTask/{{taskId}}"
       ],
       "exposed" : false
     },
@@ -632,35 +566,64 @@
     "formOutput" : {
       "type" : "expression",
       "value" : [
-        "return {",
-        "\tcontratoInput: $data.formInput.contratoInput",
+        "if( $data.contrato && $data.cuenta ){",
+        "\treturn {",
+        "\t\t//map contrato variable to expected task contract input",
+        "\t\tcontratoInput: {",
+        "\t\t\ttipoContrato: 'Apertura de cuenta',",
+        "\t\t\tsolicitante: $data.cuenta.cliente !== undefined ? $data.cuenta.cliente : null,",
+        "\t\t\tfechaContrato: $data.cuenta.fechaApertura !== undefined ? $data.cuenta.fechaApertura : null,",
+        "\t\t\tmonto: $data.cuenta.saldo !== undefined ? $data.cuenta.saldo : null",
+        "\t\t},",
+        "\t\t//map cuenta variable to expected task contract input",
+        "\t\tcuentaInput: {",
+        "\t\t\tfechaApertura: $data.cuenta.fechaApertura !== undefined ? $data.cuenta.fechaApertura : null,",
+        "\t\t\tsaldo: $data.cuenta.saldo !== undefined ? $data.cuenta.saldo : null",
+        "\t\t}",
+        "\t}",
         "}"
       ],
       "exposed" : false
     },
-    "tipoContrato" : {
-      "type" : "expression",
+    "context" : {
+      "type" : "url",
       "value" : [
-        "[\r",
-        "  { label: \"Contrato de apertura de cuenta bancaria\", value: \"cuenta_bancaria\"},\r",
-        "  { label: \"Contrato de préstamo personal\", value: \"prestamo_personal\" },\r",
-        "  { label: \"Contrato de crédito hipotecario\", value: \"credito_hipotecario\" },\r",
-        "  { label: \"Contrato de crédito vehicular\", value: \"credito_vehicular\" }\r",
-        "]"
+        "../API/bpm/userTask/{{taskId}}/context"
+      ],
+      "exposed" : false
+    },
+    "cuenta" : {
+      "type" : "url",
+      "value" : [
+        "../{{context.cuenta_ref.link}}"
+      ],
+      "exposed" : false
+    },
+    "contrato" : {
+      "type" : "url",
+      "value" : [
+        "../{{context.contrato_ref.link}}"
+      ],
+      "exposed" : false
+    },
+    "taskId" : {
+      "type" : "urlparameter",
+      "value" : [
+        "id"
       ],
       "exposed" : false
     }
   },
   "assets" : [
     {
-      "id" : "88d5673b-06b3-4b6a-a257-edce456590cc",
+      "id" : "61e70ef7-8c8e-499c-bc21-5a705b993da2",
       "name" : "style.css",
       "type" : "css",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "51db8c13-5831-415a-b12a-840cd9f6afe5",
+      "id" : "f4b80d83-73ae-4d31-b84e-213c10e511c4",
       "name" : "localization.json",
       "type" : "json",
       "order" : 0,

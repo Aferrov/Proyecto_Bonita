@@ -98,6 +98,11 @@
     	<artifactId>docx4j</artifactId>
     	<version>6.1.2</version>
     </dependency>
+    <dependency>
+      <groupId>org.bonitasoft.connectors</groupId>
+      <artifactId>bonita-connector-email</artifactId>
+      <version>1.4.2</version>
+    </dependency>
   </dependencies>
   <build>
     <plugins>

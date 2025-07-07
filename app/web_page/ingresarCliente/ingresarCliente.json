@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "79030b51-fa4c-4f3b-951a-794b86b3860c",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1751229148542,
+  "lastUpdate" : 1751856940745,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -220,7 +220,7 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "cliente.nombre"
+                          "value" : "cliente.nombres"
                         },
                         "required" : {
                           "type" : "constant",
@@ -667,7 +667,7 @@
         "\t\t//map cliente variable to expected task contract input",
         "\t\tclienteInput: {",
         "\t\t\tclienteId: $data.cliente.clienteId !== undefined ? $data.cliente.clienteId : null,",
-        "\t\t\tnombre: $data.cliente.nombre !== undefined ? $data.cliente.nombre : null,",
+        "\t\t\tnombres: $data.cliente.nombres !== undefined ? $data.cliente.nombres : null,",
         "\t\t\tapellidos: $data.cliente.apellidos !== undefined ? $data.cliente.apellidos : null,",
         "\t\t\tdni: $data.cliente.dni !== undefined ? $data.cliente.dni : null,",
         "\t\t\tfechaNacimiento: $data.cliente.fechaNacimiento !== undefined ? $data.cliente.fechaNacimiento : null",

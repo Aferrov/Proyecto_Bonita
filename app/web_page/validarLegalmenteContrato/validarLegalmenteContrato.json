@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "92267c59-6e91-40a8-850e-4a5df24e449c",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1750905270465,
+  "lastUpdate" : 1751870162968,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -295,7 +295,7 @@
                         },
                         "text" : {
                           "type" : "interpolation",
-                          "value" : "{{solicitante.firstname}}\n{{solicitante.lastname}}"
+                          "value" : "{{contrato.solicitante}}"
                         },
                         "alignment" : {
                           "type" : "constant",

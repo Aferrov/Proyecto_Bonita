@@ -18,7 +18,7 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_EW4A9z9UEfClu9HnIrL2vA" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_EW4A9j9UEfClu9HnIrL2vA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_Figtqj9UEfClu9HnIrL2vA">
-            <targetForm xmi:type="expression:Expression" xmi:id="_WNxlcFr9EfCSLvJg2Je6rw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_PwE2gFsvEfCSLvJg2Je6rw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_FigtqT9UEfClu9HnIrL2vA"/>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_FigtrD9UEfClu9HnIrL2vA" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
@@ -34,14 +34,14 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_gx0pgT9SEfClu9HnIrL2vA" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_gx0pgD9SEfClu9HnIrL2vA" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_gx0pgj9SEfClu9HnIrL2vA" name="" content="" returnTypeFixed="true"/>
-          <operations xmi:type="expression:Operation" xmi:id="_vvWXslr8EfCSLvJg2Je6rw">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_vvW-wFr8EfCSLvJg2Je6rw" name="contrato" content="contrato" type="TYPE_VARIABLE" returnType="com.company.model.ContratoData">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_vvW-wVr8EfCSLvJg2Je6rw" name="contrato" dataType="_Bk_4xD87EfClu9HnIrL2vA" className="com.company.model.ContratoData"/>
+          <operations xmi:type="expression:Operation" xmi:id="_T0IXQVsuEfCSLvJg2Je6rw">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_T0IXQlsuEfCSLvJg2Je6rw" name="contrato" content="contrato" type="TYPE_VARIABLE" returnType="com.company.model.ContratoData">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_T0IXQ1suEfCSLvJg2Je6rw" name="contrato" dataType="_Bk_4xD87EfClu9HnIrL2vA" className="com.company.model.ContratoData"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_vvW-wlr8EfCSLvJg2Je6rw" name="contratoInput.esValidoLegalmente" content="contratoInput?.esValidoLegalmente" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_lAB40Fr9EfCSLvJg2Je6rw" name="contratoInput" type="COMPLEX" createMode="false"/>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_T0IXRFsuEfCSLvJg2Je6rw" name="contratoInput.esValidoLegalmente" content="contratoInput?.esValidoLegalmente" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_T0IXRVsuEfCSLvJg2Je6rw" name="contratoInput" type="COMPLEX" createMode="false"/>
             </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_vvW-xFr8EfCSLvJg2Je6rw" type="JAVA_METHOD" expression="setEsValidoLegalmente">
+            <operator xmi:type="expression:Operator" xmi:id="_T0IXRlsuEfCSLvJg2Je6rw" type="JAVA_METHOD" expression="setEsValidoLegalmente">
               <inputTypes>java.lang.Boolean</inputTypes>
             </operator>
           </operations>
@@ -51,11 +51,11 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_gx0phz9SEfClu9HnIrL2vA" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_gx0phj9SEfClu9HnIrL2vA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_bila8Et7EfC0SfKdVQneoA">
-            <targetForm xmi:type="expression:Expression" xmi:id="_8XZAQEvoEfC0SfKdVQneoA" name="validarLegalmenteContrato" content="92267c59-6e91-40a8-850e-4a5df24e449c" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_Vgr_sFsuEfCSLvJg2Je6rw" name="validarLegalmenteContrato" content="92267c59-6e91-40a8-850e-4a5df24e449c" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_bikz6Et7EfC0SfKdVQneoA">
-            <inputs xmi:type="process:ContractInput" xmi:id="_vvWXsFr8EfCSLvJg2Je6rw" name="contratoInput" type="COMPLEX" dataReference="contrato" createMode="false">
-              <inputs xmi:type="process:ContractInput" xmi:id="_vvWXsVr8EfCSLvJg2Je6rw" name="esValidoLegalmente" type="BOOLEAN" createMode="false"/>
+            <inputs xmi:type="process:ContractInput" xmi:id="_T0HwMFsuEfCSLvJg2Je6rw" name="contratoInput" type="COMPLEX" dataReference="contrato" createMode="false">
+              <inputs xmi:type="process:ContractInput" xmi:id="_T0IXQFsuEfCSLvJg2Je6rw" name="esValidoLegalmente" type="BOOLEAN" createMode="false"/>
             </inputs>
           </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_bila8kt7EfC0SfKdVQneoA" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
@@ -73,7 +73,9 @@
             <leftOperand xmi:type="expression:Expression" xmi:id="_1asPUVL4EfCjLZZ53_Gldw" name="plantilla" content="plantilla" type="DOCUMENT_REF_TYPE">
               <referencedElements xmi:type="process:Document" xmi:id="_2QAGsFL4EfCjLZZ53_Gldw" name="plantilla"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_1asPUlL4EfCjLZZ53_Gldw" name="newScript()" content="import org.bonitasoft.engine.bpm.document.DocumentValue&#xD;&#xA;&#xD;&#xA;// Obtener datos del contrato&#xD;&#xA;def nombre =      .solicitante&#xD;&#xA;def fecha =      .fechaContrato.toString()&#xD;&#xA;def monto =      .monto.toString()&#xD;&#xA;&#xD;&#xA;// Contenido como texto plano&#xD;&#xA;def contenido = &quot;&quot;&quot;&#xD;&#xA;CONTRATO DE SERVICIO&#xD;&#xA;&#xD;&#xA;Nombre del Cliente: ${nombre}&#xD;&#xA;Fecha de Contrato: ${fecha}&#xD;&#xA;Monto del Contrato: S/ ${monto}&#xD;&#xA;&#xD;&#xA;Gracias por su confianza.&#xD;&#xA;&quot;&quot;&quot;&#xD;&#xA;&#xD;&#xA;// Crear el documento con texto plano&#xD;&#xA;return new DocumentValue(&#xD;&#xA;&#x9;contenido.getBytes(&quot;UTF-8&quot;),             // contenido como byte[]&#xD;&#xA;&#x9;&quot;text/plain&quot;,                            // mime type para .txt&#xD;&#xA;&#x9;&quot;Contrato_${nombre.replaceAll(&quot; &quot;, &quot;_&quot;)}.txt&quot; // nombre de archivo&#xD;&#xA;)&#xD;&#xA;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="org.bonitasoft.engine.bpm.document.DocumentValue"/>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_1asPUlL4EfCjLZZ53_Gldw" name="newScript()" content="import org.bonitasoft.engine.bpm.document.DocumentValue&#xD;&#xA;&#xD;&#xA;// Obtener datos del contrato&#xD;&#xA;def nombre = contrato.solicitante&#xD;&#xA;def fecha = contrato.fechaContrato.toString()&#xD;&#xA;def monto = contrato.monto.toString()&#xD;&#xA;&#xD;&#xA;// Contenido como texto plano&#xD;&#xA;def contenido = &quot;&quot;&quot;&#xD;&#xA;CONTRATO DE SERVICIO&#xD;&#xA;&#xD;&#xA;Nombre del Cliente: ${nombre}&#xD;&#xA;Fecha de Contrato: ${fecha}&#xD;&#xA;Monto del Contrato: S/ ${monto}&#xD;&#xA;&#xD;&#xA;Gracias por su confianza.&#xD;&#xA;&quot;&quot;&quot;&#xD;&#xA;&#xD;&#xA;// Crear el documento con texto plano&#xD;&#xA;return new DocumentValue(&#xD;&#xA;&#x9;contenido.getBytes(&quot;UTF-8&quot;),             // contenido como byte[]&#xD;&#xA;&#x9;&quot;text/plain&quot;,                            // mime type para .txt&#xD;&#xA;&#x9;&quot;Contrato_${nombre.replaceAll(&quot; &quot;, &quot;_&quot;)}.txt&quot; // nombre de archivo&#xD;&#xA;)&#xD;&#xA;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="org.bonitasoft.engine.bpm.document.DocumentValue">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_hJxOEFxfEfCSLvJg2Je6rw" name="contrato" dataType="_Bk_4xD87EfClu9HnIrL2vA" className="com.company.model.ContratoData"/>
+            </rightOperand>
             <operator xmi:type="expression:Operator" xmi:id="_1asPU1L4EfCjLZZ53_Gldw" type="DOCUMENT_CREATE_UPDATE"/>
           </operations>
           <loopCondition xmi:type="expression:Expression" xmi:id="_feWb00ZrEfCKO7T32-rK_Q" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
@@ -186,7 +188,7 @@
         <defaultValue xmi:type="expression:Expression" xmi:id="_iCUvYVruEfC78Zgtw890UA" name="init_contrato()" content="def contratoDataVar = new com.company.model.ContratoData()&#xD;&#xA;contratoDataVar.tipoContrato = contratoDataVar?.tipoContrato&#xD;&#xA;contratoDataVar.solicitante = contratoDataVar?.solicitante&#xD;&#xA;contratoDataVar.fechaContrato = contratoDataVar?.fechaContrato&#xD;&#xA;contratoDataVar.monto = contratoDataVar?.monto&#xD;&#xA;return contratoDataVar" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.ContratoData"/>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_Bk_4pD87EfClu9HnIrL2vA">
-        <targetForm xmi:type="expression:Expression" xmi:id="_WNxlcVr9EfCSLvJg2Je6rw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_PwE2gVsvEfCSLvJg2Je6rw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_Bk_4pj87EfClu9HnIrL2vA">
         <targetForm xmi:type="expression:Expression" xmi:id="_Bk_4pz87EfClu9HnIrL2vA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
@@ -195,9 +197,11 @@
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_2xHV4z9TEfClu9HnIrL2vA"/>
         <condition xmi:type="expression:Expression" xmi:id="_HFNdMkuOEfC0SfKdVQneoA" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
-      <connections xmi:type="process:SequenceFlow" xmi:id="_EW5PED9UEfClu9HnIrL2vA" name="No" target="_FigtoD9UEfClu9HnIrL2vA" source="_36UlYEujEfC0SfKdVQneoA" isDefault="true">
+      <connections xmi:type="process:SequenceFlow" xmi:id="_EW5PED9UEfClu9HnIrL2vA" name="No" target="_FigtoD9UEfClu9HnIrL2vA" source="_36UlYEujEfC0SfKdVQneoA">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_EW5PET9UEfClu9HnIrL2vA"/>
-        <condition xmi:type="expression:Expression" xmi:id="_HFNdMEuOEfC0SfKdVQneoA" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+        <condition xmi:type="expression:Expression" xmi:id="_HFNdMEuOEfC0SfKdVQneoA" name="newScript()" content="contrato.esValidoLegalmente == false" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
+          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_2JpO4FsuEfCSLvJg2Je6rw" name="contrato" dataType="_Bk_4xD87EfClu9HnIrL2vA" className="com.company.model.ContratoData"/>
+        </condition>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_L1GtED9UEfClu9HnIrL2vA" target="_bikM0Et7EfC0SfKdVQneoA" source="_FigtoD9UEfClu9HnIrL2vA">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_L1GtET9UEfClu9HnIrL2vA"/>
@@ -205,7 +209,9 @@
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_MXTlwT9VEfClu9HnIrL2vA" name="Si" target="_glXsMEwnEfCI7YFidBmFxg" source="_36UlYEujEfC0SfKdVQneoA">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_MXTlwj9VEfClu9HnIrL2vA"/>
-        <condition xmi:type="expression:Expression" xmi:id="_HFNdMUuOEfC0SfKdVQneoA" name="newScript()" content="     .esValidoLegalmente" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+        <condition xmi:type="expression:Expression" xmi:id="_HFNdMUuOEfC0SfKdVQneoA" name="newScript()" content="contrato.esValidoLegalmente == true" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
+          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_63rEQFsuEfCSLvJg2Je6rw" name="contrato" dataType="_Bk_4xD87EfClu9HnIrL2vA" className="com.company.model.ContratoData"/>
+        </condition>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_MB7rUD9YEfClu9HnIrL2vA" target="_M9158D9YEfClu9HnIrL2vA" source="_glXsMEwnEfCI7YFidBmFxg">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_MB7rUT9YEfClu9HnIrL2vA"/>
@@ -213,11 +219,15 @@
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_gWgXwT9YEfClu9HnIrL2vA" name="Si" target="_ijp90EwnEfCI7YFidBmFxg" source="_M9158D9YEfClu9HnIrL2vA">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_gWgXwj9YEfClu9HnIrL2vA"/>
-        <condition xmi:type="expression:Expression" xmi:id="_gWgXwz9YEfClu9HnIrL2vA" name="newScript()" content="     .cumpleSBS" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+        <condition xmi:type="expression:Expression" xmi:id="_gWgXwz9YEfClu9HnIrL2vA" name="newScript()" content="contrato.cumpleSBS == true" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
+          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_ABPmIFsvEfCSLvJg2Je6rw" name="contrato" dataType="_Bk_4xD87EfClu9HnIrL2vA" className="com.company.model.ContratoData"/>
+        </condition>
       </connections>
-      <connections xmi:type="process:SequenceFlow" xmi:id="_5eFJsEZqEfCKO7T32-rK_Q" name="No" target="_FigtoD9UEfClu9HnIrL2vA" source="_M9158D9YEfClu9HnIrL2vA" isDefault="true">
+      <connections xmi:type="process:SequenceFlow" xmi:id="_5eFJsEZqEfCKO7T32-rK_Q" name="No" target="_FigtoD9UEfClu9HnIrL2vA" source="_M9158D9YEfClu9HnIrL2vA">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_5eag4EZqEfCKO7T32-rK_Q"/>
-        <condition xmi:type="expression:Expression" xmi:id="_5ebvAEZqEfCKO7T32-rK_Q" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+        <condition xmi:type="expression:Expression" xmi:id="_5ebvAEZqEfCKO7T32-rK_Q" name="newScript()" content="contrato.cumpleSBS == false" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
+          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_DZ6LEFsvEfCSLvJg2Je6rw" name="contrato" dataType="_Bk_4xD87EfClu9HnIrL2vA" className="com.company.model.ContratoData"/>
+        </condition>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_feZfIEZrEfCKO7T32-rK_Q" target="_Qf-9gFI8EfCjLZZ53_Gldw" source="_ijp90EwnEfCI7YFidBmFxg">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_feaGMEZrEfCKO7T32-rK_Q"/>

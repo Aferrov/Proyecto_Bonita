@@ -1,10 +1,10 @@
 {
-  "id" : "newForm2",
-  "name" : "newForm2",
+  "id" : "ingresarCuenta1",
+  "name" : "ingresarCuenta1",
   "type" : "form",
-  "uuid" : "3a60b387-b76e-44e8-871c-e1195ab40822",
+  "uuid" : "bb39805f-9d56-47bc-92e1-759522f93510",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1751868604044,
+  "lastUpdate" : 1751858076379,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -14,7 +14,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "ffc57b09-1406-4a2d-bd00-8deb37eaa7bf",
+        "reference" : "46b938ad-7ea8-4455-8259-fd1538d89bae",
         "hasValidationError" : false,
         "id" : "pbContainer",
         "rows" : [
@@ -53,7 +53,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "a02759ab-36fd-4c6f-b644-e95513e8aa40",
+              "reference" : "9501c692-4b22-4eb0-b768-de2de3cde6dd",
               "hasValidationError" : false,
               "id" : "pbTitle",
               "description" : ""
@@ -101,7 +101,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "7f6a58d8-ae01-42c2-b6a9-0c437d63a8d7",
+              "reference" : "8e4c9ff0-3bb7-43b4-9ec4-0d575ccc0acb",
               "hasValidationError" : false,
               "id" : "pbText",
               "description" : ""
@@ -116,17 +116,8 @@
         "dimension" : {
           "xs" : 12
         },
-        "propertyValues" : {
-          "cssClasses" : {
-            "type" : "constant",
-            "value" : ""
-          },
-          "hidden" : {
-            "type" : "constant",
-            "value" : false
-          }
-        },
-        "reference" : "83cf9449-2e01-4277-a06b-1d4faa8abdb7",
+        "propertyValues" : { },
+        "reference" : "8a2872d1-1bca-4014-9e40-be5dde5d4b19",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -135,7 +126,7 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "caa41b86-7580-414c-b200-0a979c847aed",
+          "reference" : "db599151-cffe-4d79-99b0-e524575c34a1",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
@@ -174,7 +165,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "3cb99899-178b-4f51-b738-bc4ca20fc648",
+                "reference" : "42377126-1535-4fd6-b1e3-e0017e5ca771",
                 "hasValidationError" : false,
                 "id" : "pbTitle",
                 "description" : ""
@@ -206,7 +197,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "d24749d4-33ee-48e6-a6db-915ef7fa6106",
+                "reference" : "d99c6cd4-1a88-4276-aeb6-0b7acd0faf53",
                 "hasValidationError" : false,
                 "id" : "pbContainer",
                 "rows" : [
@@ -253,7 +244,7 @@
                           "value" : 12
                         }
                       },
-                      "reference" : "5297a8f3-34f5-4a85-ad66-ac5ee783042d",
+                      "reference" : "ad59ec00-aac3-44b6-8c0e-8aa00c8723be",
                       "hasValidationError" : false,
                       "id" : "pbText",
                       "description" : ""
@@ -329,7 +320,7 @@
                           "value" : "cuenta.fechaApertura"
                         }
                       },
-                      "reference" : "242fda65-f033-462e-92ca-73ec2e64b018",
+                      "reference" : "15376836-638c-42ce-86d4-292a0d7c03e9",
                       "hasValidationError" : false,
                       "id" : "pbDatePicker",
                       "description" : ""
@@ -393,7 +384,7 @@
                           "value" : false
                         }
                       },
-                      "reference" : "a4bb8ca6-2bcb-4691-9407-e7cc9d07a831",
+                      "reference" : "7d9c83cd-5e0e-4f3c-a35d-719fed6e159a",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -477,7 +468,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "f39832db-8748-4e95-b808-7cbb80db04ca",
+                "reference" : "d2bdfbcb-d7d1-4b08-b473-0004d8633704",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
@@ -529,7 +520,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "146af417-98b6-4df1-9182-35a9a7ff2076",
+                "reference" : "3f2248c7-2bd4-4f4a-ac91-e19f4f911ab2",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
@@ -566,15 +557,8 @@
     "formOutput" : {
       "type" : "expression",
       "value" : [
-        "if( $data.contrato && $data.cuenta ){",
+        "if( $data.cuenta ){",
         "\treturn {",
-        "\t\t//map contrato variable to expected task contract input",
-        "\t\tcontratoInput: {",
-        "\t\t\ttipoContrato: 'Apertura de cuenta',",
-        "\t\t\tsolicitante: $data.cuenta.cliente !== undefined ? $data.cuenta.cliente : null,",
-        "\t\t\tfechaContrato: $data.cuenta.fechaApertura !== undefined ? $data.cuenta.fechaApertura : null,",
-        "\t\t\tmonto: $data.cuenta.saldo !== undefined ? $data.cuenta.saldo : null",
-        "\t\t},",
         "\t\t//map cuenta variable to expected task contract input",
         "\t\tcuentaInput: {",
         "\t\t\tfechaApertura: $data.cuenta.fechaApertura !== undefined ? $data.cuenta.fechaApertura : null,",
@@ -599,13 +583,6 @@
       ],
       "exposed" : false
     },
-    "contrato" : {
-      "type" : "url",
-      "value" : [
-        "../{{context.contrato_ref.link}}"
-      ],
-      "exposed" : false
-    },
     "taskId" : {
       "type" : "urlparameter",
       "value" : [
@@ -616,14 +593,14 @@
   },
   "assets" : [
     {
-      "id" : "61e70ef7-8c8e-499c-bc21-5a705b993da2",
+      "id" : "69862441-552e-41b3-83e0-19ec76c416d9",
       "name" : "style.css",
       "type" : "css",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "f4b80d83-73ae-4d31-b84e-213c10e511c4",
+      "id" : "c01334d4-38d7-4bea-939b-b7fa63f9b437",
       "name" : "localization.json",
       "type" : "json",
       "order" : 0,

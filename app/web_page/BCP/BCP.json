@@ -4,7 +4,7 @@
   "type" : "page",
   "uuid" : "c79717a9-4416-4892-b635-e4e54e4cc424",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1752022769880,
+  "lastUpdate" : 1752458197417,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -497,7 +497,7 @@
                       },
                       "targetUrl" : {
                         "type" : "constant",
-                        "value" : "http://"
+                        "value" : "http://localhost:24312/bonita/apps/userAppBonita/task-list/#!/process/Solicitar_credito/1.0/start"
                       },
                       "pageToken" : {
                         "type" : "constant"

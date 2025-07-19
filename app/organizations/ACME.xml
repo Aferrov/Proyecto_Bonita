@@ -632,7 +632,8 @@
     <membership>
       <userName>walter.bates</userName>
       <roleName>member</roleName>
-      <groupName>acme</groupName>
+      <groupName>hr</groupName>
+      <groupParentPath>/acme</groupParentPath>
     </membership>
     <membership>
       <userName>zachary.williamson</userName>
@@ -709,8 +710,8 @@
     <membership>
       <userName>daniela.angelo</userName>
       <roleName>validador</roleName>
-      <groupName>europe</groupName>
-      <groupParentPath>/acme/sales</groupParentPath>
+      <groupName>it</groupName>
+      <groupParentPath>/acme</groupParentPath>
     </membership>
     <membership>
       <userName>misa.kumagai</userName>

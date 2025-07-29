@@ -465,8 +465,8 @@
       <data xmi:type="process:Data" xmi:id="_8twCdl-BEfCMqfhId-N9vA" name="clienteVar" dataType="_8twCs1-BEfCMqfhId-N9vA">
         <defaultValue xmi:type="expression:Expression" xmi:id="_8twCd1-BEfCMqfhId-N9vA" content=""/>
       </data>
-      <formMapping xmi:type="process:FormMapping" xmi:id="_8twCeF-BEfCMqfhId-N9vA">
-        <targetForm xmi:type="expression:Expression" xmi:id="_Yx-8IGHjEfCX-rJIhBNLmQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+      <formMapping xmi:type="process:FormMapping" xmi:id="_8twCeF-BEfCMqfhId-N9vA" type="NONE">
+        <targetForm xmi:type="expression:Expression" xmi:id="_2FUKEGypEfCRpLfxsTkJ6A" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_8twCel-BEfCMqfhId-N9vA">
         <targetForm xmi:type="expression:Expression" xmi:id="_8twCe1-BEfCMqfhId-N9vA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>

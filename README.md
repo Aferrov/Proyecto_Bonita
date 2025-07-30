@@ -1,5 +1,5 @@
 
-# **Proyecto Final: Votaciones Online**
+# **Proyecto Final**
 
 
 **Miembros:**
@@ -9,7 +9,7 @@
 -   Jazmin Gabriela Perez Villasante
 -   Cristhian David Huanca Olazabal
 -   Sebastian Andres Mendoza Fernandez
--   Edilson Bonet Mamani Yucra# Proyecto Final - Proceso de Apertura de Cuenta Bancaria en Bonita Studio
+-   Edilson Bonet Mamani Yucra
 
 ## Descripción General
 

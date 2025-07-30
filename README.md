@@ -90,7 +90,10 @@ Modelar seis procesos clave del BCP mediante diagramas BPMN que permitan:
 
 #### ReclamoData
 - `reclamoId`, `cliente`, `observacion`, `tipoReclamo`, `estaAceptado`
-
+### Diagrama de proceso
+![Diagrama de proceso](img/dg1.png)
+### Arquitectura
+![Arquitectura](img/aq.png)
 ---
 ## Arbol de directorios del Bontia Studio
 ```plaintext
@@ -98,8 +101,9 @@ banco-bonita-master/
 ├── Organizaciones/
 │   └── ACME.xml (activa)
 ├── Modelo de Datos de Negocio/
-│   └── bdm.xml
+│   ├── bdm.xml
 ├── Descriptores de aplicación/
+├── Diagramas de proceso/
 │   ├── Aperturar_cuenta_separados-1.0.proc
 │   ├── Atencion_resolucion_de_Reclamos-1.0.proc
 │   ├── Emision_y_Administracion_de_tarjetas-1.0.proc
@@ -108,7 +112,26 @@ banco-bonita-master/
 ├── Páginas/Formularios/Layouts/
 │   ├── asignarFirma.form
 │   ├── clasificarReclamo.form
-│   ├── ...
+│   ├── formNuevo.form
+│   ├── generarReclamo.form
+│   ├── ingresarCliente.form
+│   ├── ingresarContrato.form
+│   ├── ingresarCredito.form
+│   ├── ingresarCuenta.form
+│   ├── ingresarCuenta1.form
+│   ├── ingresarCuenta2.form
+│   ├── ingresarReclamo.form
+│   ├── llenarObservacion.form
+│   ├── mostrarContrato.form
+│   ├── mostrarReclamo.form
+│   ├── newForm.form
+│   ├── newForm1.form
+│   ├── newForm3.form
+│   ├── resolverReclamo.form
+│   ├── validarCliente.form
+│   ├── validarLegalmenteContrato.form
+│   ├── validarSBSContrato.form
+│   └── BCP.page
 ├── Entornos/
 │   ├── Local.xml (activa)
 │   ├── Production.xml
@@ -130,7 +153,12 @@ banco-bonita-master/
 - **PlantUML** (opcional): Diagramas de arquitectura.
 
 ---
+## Organización del Trabajo en Trello
+A continuación, se presenta una imagen del tablero Trello que utilizamos para organizar y distribuir las actividades del proyecto. Cada miembro del equipo asumió responsabilidades específicas, abarcando desde el modelado de procesos BPMN hasta el diseño de formularios y la documentación final.
 
+Esta planificación nos permitió trabajar de forma colaborativa y ordenada, asegurando que cada componente del sistema estuviera correctamente asignado, desarrollado y validado. El tablero refleja el flujo de trabajo real seguido por el equipo, agrupando las tareas por áreas como: diagramas de procesos, formularios, documentación, etc.
+![Arquitectura](img/trello.png)
+---
 ## Año
 
 **Arequipa – Perú, 2025**

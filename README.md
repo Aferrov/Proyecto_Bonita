@@ -115,7 +115,7 @@ banco-bonita-master/
 │   └── Qualification.xml
 ├── Recursos/
 │   └── plantilla.docx
-
+```
 ## Comentarios Relevantes
 
 - El proceso automatiza decisiones mediante validaciones internas antes de la aprobación.

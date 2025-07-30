@@ -156,6 +156,8 @@ banco-bonita-master/
 ## Organización del Trabajo en Trello
 A continuación, se presenta una imagen del tablero Trello que utilizamos para organizar y distribuir las actividades del proyecto. Cada miembro del equipo asumió responsabilidades específicas, abarcando desde el modelado de procesos BPMN hasta el diseño de formularios y la documentación final.
 
+[Trello - Proyecto Final](https://trello.com/b/SV2T10sD/proyecto-final)
+
 Esta planificación nos permitió trabajar de forma colaborativa y ordenada, asegurando que cada componente del sistema estuviera correctamente asignado, desarrollado y validado. El tablero refleja el flujo de trabajo real seguido por el equipo, agrupando las tareas por áreas como: diagramas de procesos, formularios, documentación, etc.
 ![Arquitectura](img/trello.png)
 ---
